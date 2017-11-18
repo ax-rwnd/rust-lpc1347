@@ -1446,17 +1446,17 @@
 						<value>0x0</value>
 					</enumeratedValue>	
 					<enumeratedValue>	
-						<name>COUNTER_MODE_TC_IS_</name>
+						<name>COUNTER_MODE_TC_IS_RISING</name>
 						<description>Counter Mode: TC is incremented on rising edges on the CAP input selected by bits 3:2.</description>
 						<value>0x1</value>
 					</enumeratedValue>	
 					<enumeratedValue>	
-						<name>COUNTER_MODE_TC_IS_</name>
+						<name>COUNTER_MODE_TC_IS_FALLING</name>
 						<description>Counter Mode: TC is incremented on falling edges on the CAP input selected by bits 3:2.</description>
 						<value>0x2</value>
 					</enumeratedValue>	
 					<enumeratedValue>	
-						<name>COUNTER_MODE_TC_IS_</name>
+						<name>COUNTER_MODE_TC_IS_BOTH</name>
 						<description>Counter Mode: TC is incremented on both edges on the CAP input selected by bits 3:2.</description>
 						<value>0x3</value>
 					</enumeratedValue>	
@@ -1474,7 +1474,7 @@
 						<value>0x0</value>
 					</enumeratedValue>	
 					<enumeratedValue>	
-						<name>RESERVED_</name>
+						<name>RESERVED_0X1</name>
 						<description>Reserved.</description>
 						<value>0x1</value>
 					</enumeratedValue>	
@@ -1498,32 +1498,32 @@
 				<enumeratedValues>		
 				<name>ENUM</name>		
 					<enumeratedValue>	
-						<name>RISING_EDGE_OF_CT16B</name>
+						<name>RISING_EDGE_OF_CT16B0_CAP0</name>
 						<description>Rising Edge of CT16B0_CAP0 clears the timer (if bit 4 is set).</description>
 						<value>0x0</value>
 					</enumeratedValue>	
 					<enumeratedValue>	
-						<name>FALLING_EDGE_OF_CT16</name>
+						<name>FALLING_EDGE_OF_CT16B0_CAP0</name>
 						<description>Falling Edge of CT16B0_CCAP0 clears the timer (if bit 4 is set).</description>
 						<value>0x1</value>
 					</enumeratedValue>	
 					<enumeratedValue>	
-						<name>RESERVED_</name>
+						<name>RESERVED_0X2</name>
 						<description>Reserved.</description>
 						<value>0x2</value>
 					</enumeratedValue>	
 					<enumeratedValue>	
-						<name>RESERVED_</name>
+						<name>RESERVED_0X3</name>
 						<description>Reserved.</description>
 						<value>0x3</value>
 					</enumeratedValue>	
 					<enumeratedValue>	
-						<name>RISING_EDGE_OF_CT16B</name>
+						<name>RISING_EDGE_OF_CT16B0_CAP1</name>
 						<description>Rising Edge of CT16B0_CAP1 clears the timer (if bit 4 is set).</description>
 						<value>0x4</value>
 					</enumeratedValue>	
 					<enumeratedValue>	
-						<name>FALLING_EDGE_OF_CT16</name>
+						<name>FALLING_EDGE_OF_CT160_CAP1</name>
 						<description>Falling Edge of CT16B0_CAP1 clears the timer (if bit 4 is set).</description>
 						<value>0x5</value>
 					</enumeratedValue>	
@@ -2444,32 +2444,32 @@
 				<enumeratedValues>		
 				<name>ENUM</name>		
 					<enumeratedValue>	
-						<name>RISING_EDGE_OF_CT16B</name>
+						<name>RISING_EDGE_OF_CT16B1_CAP0</name>
 						<description>Rising Edge of CT16B1_CAP0 clears the timer (if bit 4 is set).</description>
 						<value>0x0</value>
 					</enumeratedValue>	
 					<enumeratedValue>	
-						<name>FALLING_EDGE_OF_CT16</name>
+						<name>FALLING_EDGE_OF_CT16B1_CAP0</name>
 						<description>Falling Edge of CT16B1_CAP0 clears the timer (if bit 4 is set).</description>
 						<value>0x1</value>
 					</enumeratedValue>	
 					<enumeratedValue>	
-						<name>RISING_EDGE_OF_CT16B</name>
+						<name>RISING_EDGE_OF_CT16B1_CAP1</name>
 						<description>Rising Edge of CT16B1_CAP1 clears the timer (if bit 4 is set).</description>
 						<value>0x2</value>
 					</enumeratedValue>	
 					<enumeratedValue>	
-						<name>FALLING_EDGE_OF_CT16</name>
+						<name>FALLING_EDGE_OF_CT16B1_CAP1</name>
 						<description>Falling Edge of CT16B1_CAP1 clears the timer (if bit 4 is set).</description>
 						<value>0x3</value>
 					</enumeratedValue>	
 					<enumeratedValue>	
-						<name>RESERVED_</name>
+						<name>RESERVED_0X4</name>
 						<description>Reserved.</description>
 						<value>0x4</value>
 					</enumeratedValue>	
 					<enumeratedValue>	
-						<name>RESERVED_</name>
+						<name>RESERVED_0X5</name>
 						<description>Reserved.</description>
 						<value>0x5</value>
 					</enumeratedValue>	
@@ -3350,7 +3350,7 @@
 						<value>0x0</value>																	
 					</enumeratedValue>																		
 					<enumeratedValue>																		
-						<name>RESERVED_</name>																	
+						<name>RESERVED_0X1</name>																	
 						<description>Reserved.</description>																	
 						<value>0x1</value>																	
 					</enumeratedValue>																		
@@ -3374,12 +3374,12 @@
 				<enumeratedValues>																			
 				<name>ENUM</name>																			
 					<enumeratedValue>																		
-						<name>RISING_EDGE_OF_CT32B</name>																	
+						<name>RISING_EDGE_OF_CT32B0_CAP0</name>																	
 						<description>Rising Edge of CT32B0_CAP0 clears the timer (if bit 4 is set)</description>																	
 						<value>0x0</value>																	
 					</enumeratedValue>																		
 					<enumeratedValue>																		
-						<name>FALLING_EDGE_OF_CT32</name>																	
+						<name>FALLING_EDGE_OF_CT32B0_CAP0</name>																	
 						<description>Falling Edge of CT32B0_CAP0 clears the timer (if bit 4 is set)</description>																	
 						<value>0x1</value>																	
 					</enumeratedValue>																		
@@ -3389,17 +3389,17 @@
 						<value>0x2</value>																	
 					</enumeratedValue>																		
 					<enumeratedValue>																		
-						<name>RESERVED_</name>																	
+						<name>RESERVED_0X3</name>																	
 						<description>Reserved.</description>																	
 						<value>0x3</value>																	
 					</enumeratedValue>																		
 					<enumeratedValue>																		
-						<name>RISING_EDGE_OF_CT32B</name>																	
+						<name>RISING_EDGE_OF_CT32B0_CAP1</name>																	
 						<description>Rising Edge of CT32B0_CAP1 clears the timer (if bit 4 is set)</description>																	
 						<value>0x4</value>																	
 					</enumeratedValue>																		
 					<enumeratedValue>																		
-						<name>FALLING_EDGE_OF_CT32</name>																	
+						<name>FALLING_EDGE_OF_CT32B0_CAP1</name>																	
 						<description>Falling Edge of CT32B0_CAP1 clears the timer (if bit 4 is set)</description>																	
 						<value>0x5</value>																	
 					</enumeratedValue>																		
@@ -4288,22 +4288,22 @@
 				<enumeratedValues>																			
 				<name>ENUM</name>																			
 					<enumeratedValue>																		
-						<name>RISING_EDGE_OF_CT32B</name>																	
+						<name>RISING_EDGE_OF_CT32B1_CAP0</name>																	
 						<description>Rising Edge of CT32B1_CAP0 clears the timer (if bit 4 is set)</description>																	
 						<value>0x0</value>																	
 					</enumeratedValue>																		
 					<enumeratedValue>																		
-						<name>FALLING_EDGE_OF_CT32</name>																	
+						<name>FALLING_EDGE_OF_CT32B1_CAP0</name>																	
 						<description>Falling Edge of CT32B1_CAP0 clears the timer (if bit 4 is set)</description>																	
 						<value>0x1</value>																	
 					</enumeratedValue>																		
 					<enumeratedValue>																		
-						<name>RISING_EDGE_OF_CT32B</name>																	
+						<name>RISING_EDGE_OF_CT32B1_CAP1</name>																	
 						<description>Rising Edge of CT32B1_CAP1 clears the timer (if bit 4 is set)</description>																	
 						<value>0x2</value>																	
 					</enumeratedValue>																		
 					<enumeratedValue>																		
-						<name>FALLING_EDGE_OF_CT32</name>																	
+						<name>FALLING_EDGE_OF_CT32B1_CAP1</name>																	
 						<description>Falling Edge of CT32B1_CAP1 clears the timer (if bit 4 is set)</description>																	
 						<value>0x3</value>																	
 					</enumeratedValue>																		
@@ -5829,12 +5829,12 @@
 							<enumeratedValues>
 								<name>ENUM</name>
 								<enumeratedValue>
-									<name>RS_485_EIA_485_NORMA</name>
+									<name>RS_485_EIA_485_NORMAL_DISABLED</name>
 									<description>RS-485/EIA-485 Normal Multidrop Mode (NMM) is disabled.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>RS_485_EIA_485_NORMA</name>
+									<name>RS_485_EIA_485_NORMAL_ENABLED</name>
 									<description>RS-485/EIA-485 Normal Multidrop Mode (NMM) is enabled. In this mode, an address is detected when a received byte causes the USART to set the parity error and generate an interrupt.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -5865,12 +5865,12 @@
 							<enumeratedValues>
 								<name>ENUM</name>
 								<enumeratedValue>
-									<name>AUTO_ADDRESS_DETECT_</name>
+									<name>AUTO_ADDRESS_DETECT_DISABLED</name>
 									<description>Auto Address Detect (AAD) is disabled.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>AUTO_ADDRESS_DETECT_</name>
+									<name>AUTO_ADDRESS_DETECT_ENABLED</name>
 									<description>Auto Address Detect (AAD) is enabled.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -7974,7 +7974,7 @@ completed on channel n</description>
 						<value>0x2</value>												
 					</enumeratedValue>													
 					<enumeratedValue>													
-						<name>RESERVED_</name>												
+						<name>RESERVED_0X3</name>												
 						<description>Reserved.</description>												
 						<value>0x3</value>												
 					</enumeratedValue>													
@@ -8036,7 +8036,7 @@ completed on channel n</description>
 						<value>0x2</value>												
 					</enumeratedValue>													
 					<enumeratedValue>													
-						<name>RESERVED_</name>												
+						<name>RESERVED_0X3</name>												
 						<description>Reserved.</description>												
 						<value>0x3</value>												
 					</enumeratedValue>													
@@ -15974,7 +15974,7 @@ completed on channel n</description>
 				<enumeratedValues>																			
 				<name>ENUM</name>																			
 					<enumeratedValue>																		
-						<name>RESERVED_</name>																	
+						<name>RESERVED_0X0</name>																	
 						<description>Reserved.</description>																	
 						<value>0x0</value>																	
 					</enumeratedValue>																		
