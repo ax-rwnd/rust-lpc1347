@@ -17,6 +17,7 @@ if (open (F, "$ARGV[0]")) {
     }
 }
 
+# Print the duplicates
 foreach my $el (keys %names) {
     if ($names{$el} > 1) {
         print("$el: $names{$el}\n");
