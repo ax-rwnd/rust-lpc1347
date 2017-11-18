@@ -1441,7 +1441,7 @@
 				<enumeratedValues>		
 				<name>ENUM</name>		
 					<enumeratedValue>	
-						<name>TIMER_MODE_EVERY_RI</name>
+						<name>TIMER_MODE_EVERY_RISING</name>
 						<description>Timer Mode: every rising PCLK edge</description>
 						<value>0x0</value>
 					</enumeratedValue>	
@@ -2392,22 +2392,22 @@
 				<enumeratedValues>		
 				<name>ENUM</name>		
 					<enumeratedValue>	
-						<name>TIMER_MODE_EVERY_RI</name>
+						<name>TIMER_MODE_EVERY_RISING</name>
 						<description>Timer Mode: every rising PCLK edge</description>
 						<value>0x0</value>
 					</enumeratedValue>	
 					<enumeratedValue>	
-						<name>COUNTER_MODE_TC_IS_</name>
+						<name>COUNTER_MODE_TC_IS_RISING</name>
 						<description>Counter Mode: TC is incremented on rising edges on the CAP input selected by bits 3:2.</description>
 						<value>0x1</value>
 					</enumeratedValue>	
 					<enumeratedValue>	
-						<name>COUNTER_MODE_TC_IS_</name>
+						<name>COUNTER_MODE_TC_IS_FALLING</name>
 						<description>Counter Mode: TC is incremented on falling edges on the CAP input selected by bits 3:2.</description>
 						<value>0x2</value>
 					</enumeratedValue>	
 					<enumeratedValue>	
-						<name>COUNTER_MODE_TC_IS_</name>
+						<name>COUNTER_MODE_TC_IS_BOTH</name>
 						<description>Counter Mode: TC is incremented on both edges on the CAP input selected by bits 3:2.</description>
 						<value>0x3</value>
 					</enumeratedValue>	
@@ -3317,22 +3317,22 @@
 				<enumeratedValues>																			
 				<name>ENUM</name>																			
 					<enumeratedValue>																		
-						<name>TIMER_MODE_EVERY_RI</name>																	
+						<name>TIMER_MODE_EVERY_RISING</name>																	
 						<description>Timer Mode: every rising PCLK edge</description>																	
 						<value>0x0</value>																	
 					</enumeratedValue>																		
 					<enumeratedValue>																		
-						<name>COUNTER_MODE_TC_IS_</name>																	
+						<name>COUNTER_MODE_TC_IS_RISING</name>																	
 						<description>Counter Mode: TC is incremented on rising edges on the CAP input selected by bits 3:2.</description>																	
 						<value>0x1</value>																	
 					</enumeratedValue>																		
 					<enumeratedValue>																		
-						<name>COUNTER_MODE_TC_IS_</name>																	
+						<name>COUNTER_MODE_TC_IS_FALLING</name>																	
 						<description>Counter Mode: TC is incremented on falling edges on the CAP input selected by bits 3:2.</description>																	
 						<value>0x2</value>																	
 					</enumeratedValue>																		
 					<enumeratedValue>																		
-						<name>COUNTER_MODE_TC_IS_</name>																	
+						<name>COUNTER_MODE_TC_IS_BOTH</name>																	
 						<description>Counter Mode: TC is incremented on both edges on the CAP input selected by bits 3:2.</description>																	
 						<value>0x3</value>																	
 					</enumeratedValue>																		
@@ -4236,22 +4236,22 @@
 				<enumeratedValues>																			
 				<name>ENUM</name>																			
 					<enumeratedValue>																		
-						<name>TIMER_MODE_EVERY_RI</name>																	
+						<name>TIMER_MODE_EVERY_RISING</name>																	
 						<description>Timer Mode: every rising PCLK edge</description>																	
 						<value>0x0</value>																	
 					</enumeratedValue>																		
 					<enumeratedValue>																		
-						<name>COUNTER_MODE_TC_IS_</name>																	
+						<name>COUNTER_MODE_TC_IS_RISING</name>																	
 						<description>Counter Mode: TC is incremented on rising edges on the CAP input selected by bits 3:2.</description>																	
 						<value>0x1</value>																	
 					</enumeratedValue>																		
 					<enumeratedValue>																		
-						<name>COUNTER_MODE_TC_IS_</name>																	
+						<name>COUNTER_MODE_TC_IS_FALLING</name>																	
 						<description>Counter Mode: TC is incremented on falling edges on the CAP input selected by bits 3:2.</description>																	
 						<value>0x2</value>																	
 					</enumeratedValue>																		
 					<enumeratedValue>																		
-						<name>COUNTER_MODE_TC_IS_</name>																	
+						<name>COUNTER_MODE_TC_IS_BOTH</name>																	
 						<description>Counter Mode: TC is incremented on both edges on the CAP input selected by bits 3:2.</description>																	
 						<value>0x3</value>																	
 					</enumeratedValue>																		
