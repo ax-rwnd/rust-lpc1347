@@ -318,7 +318,7 @@
 							<enumeratedValues>
 								<name>ENUM</name>
 								<enumeratedValue>
-									<name>MATCH</name>
+									<name>MATCH_REG</name>
 									<description>When this bit is cleared, an interrupt will only be generated when a match occurs to one of the (up-to) four address registers described above.   That is, the module will respond as a normal slave as far as address-recognition is concerned.</description>
 									<value>0</value>
 								</enumeratedValue>
@@ -1081,7 +1081,7 @@
 		<resetMask>0xFFFFFFFF</resetMask>				
 		<fields>				
 			<field>			
-				<name>MATCH</name>		
+				<name>MATCH_REG</name>		
 				<description>Timer counter match value.</description>		
 				<bitRange>[15:0]</bitRange>		
 			</field>			
@@ -2050,7 +2050,7 @@
 		<resetMask>0xFFFFFFFF</resetMask>				
 		<fields>				
 			<field>			
-				<name>MATCH</name>		
+				<name>MATCH_REG</name>		
 				<description>Timer counter match value.</description>		
 				<bitRange>[15:0]</bitRange>		
 			</field>			
@@ -2982,7 +2982,7 @@
 		<resetMask>0xFFFFFFFF</resetMask>																					
 		<fields>																					
 			<field>																				
-				<name>MATCH</name>																			
+				<name>MATCH_REG</name>																			
 				<description>Timer counter match value.</description>																			
 				<bitRange>[31:0]</bitRange>																			
 			</field>																				
@@ -3906,7 +3906,7 @@
 		<resetMask>0xFFFFFFFF</resetMask>																					
 		<fields>																					
 			<field>																				
-				<name>MATCH</name>																			
+				<name>MATCH_REG</name>																			
 				<description>Timer counter match value.</description>																			
 				<bitRange>[31:0]</bitRange>																			
 			</field>																				
