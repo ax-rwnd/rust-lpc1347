@@ -1,6 +1,6 @@
 [package]
 name = "lpc1347"
-version = "0.1.4"
+version = "0.1.5"
 authors = ["Axel Sundbom <axel-sundbom@hotmail.com>"]
 description = "Peripheral access for the nxp lpc1347"
 
