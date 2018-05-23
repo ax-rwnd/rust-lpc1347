@@ -14,7 +14,11 @@ Add `rust-lpc1347` as a dependency to your Cargo.toml file:
 
 ## Changelog
 
-### [0.1.5] - 2018-09-04
+### [0.2.0] - 2018-05-23
+- Updates svd2rust to `0.13` in order to work with newer versions of RTFM and cortex-m, tested with
+  `rustc 1.28.0-nightly (71e87be38 2018-05-22)`
+
+### [0.1.5] - 2018-04-09
 - Updates the SVD to work with newer versions of RTFM and rust, tested with
   `rustc 1.27.0-nightly (056f589fb 2018-04-07`
 - Adds a manual patch for overlapping USART registers
