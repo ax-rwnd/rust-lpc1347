@@ -1,17 +1,20 @@
 [package]
 name = "lpc1347"
-version = "0.1.5"
+version = "0.2.0"
 authors = ["Axel Sundbom <axel-sundbom@hotmail.com>"]
 description = "Peripheral access for the nxp lpc1347"
 
 [dependencies]
-cortex-m = "0.4.0"
-bare-metal = "0.1.0"
+cortex-m = "^0.5.2"
+bare-metal = "0.2.0"
 vcell = "0.1.0"
 
 [dependencies.cortex-m-rt]
 optional = true
-version = "0.3.9"
+version = "^0.5.1"
 
 [features]
-rt = ["cortex-m-rt"]
+rt = ["cortex-m-rt/device"]
+
+[package.metadata.docs.rs]
+features = ["rt"]
