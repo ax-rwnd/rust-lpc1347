@@ -13,64 +13,64 @@ pub struct RegisterBlock {
     pub usbpllctrl: USBPLLCTRL,
     #[doc = "0x14 - USB PLL status"]
     pub usbpllstat: USBPLLSTAT,
-    _reserved0: [u8; 8usize],
+    _reserved6: [u8; 8usize],
     #[doc = "0x20 - System oscillator control"]
     pub sysoscctrl: SYSOSCCTRL,
     #[doc = "0x24 - Watchdog oscillator control"]
     pub wdtoscctrl: WDTOSCCTRL,
-    _reserved1: [u8; 8usize],
+    _reserved8: [u8; 8usize],
     #[doc = "0x30 - System reset status register"]
     pub sysrststat: SYSRSTSTAT,
-    _reserved2: [u8; 12usize],
+    _reserved9: [u8; 12usize],
     #[doc = "0x40 - System PLL clock source select"]
     pub syspllclksel: SYSPLLCLKSEL,
-    _reserved3: [u8; 4usize],
+    _reserved10: [u8; 4usize],
     #[doc = "0x48 - USB PLL clock source select"]
     pub usbpllclksel: USBPLLCLKSEL,
-    _reserved4: [u8; 36usize],
+    _reserved11: [u8; 36usize],
     #[doc = "0x70 - Main clock source select"]
     pub mainclksel: MAINCLKSEL,
-    _reserved5: [u8; 4usize],
+    _reserved12: [u8; 4usize],
     #[doc = "0x78 - System clock divider"]
     pub sysahbclkdiv: SYSAHBCLKDIV,
-    _reserved6: [u8; 4usize],
+    _reserved13: [u8; 4usize],
     #[doc = "0x80 - System clock control"]
     pub sysahbclkctrl: SYSAHBCLKCTRL,
-    _reserved7: [u8; 16usize],
+    _reserved14: [u8; 16usize],
     #[doc = "0x94 - SSP0 clock divider"]
     pub ssp0clkdiv: SSP0CLKDIV,
     #[doc = "0x98 - UART clock divider"]
     pub uartclkdiv: UARTCLKDIV,
     #[doc = "0x9c - SSP1 clock divider"]
     pub ssp1clkdiv: SSP1CLKDIV,
-    _reserved8: [u8; 12usize],
+    _reserved17: [u8; 12usize],
     #[doc = "0xac - ARM trace clock divider"]
     pub traceclkdiv: TRACECLKDIV,
     #[doc = "0xb0 - SYSTICK clock divider"]
     pub systickclkdiv: SYSTICKCLKDIV,
-    _reserved9: [u8; 12usize],
+    _reserved19: [u8; 12usize],
     #[doc = "0xc0 - USB clock source select"]
     pub usbclksel: USBCLKSEL,
-    _reserved10: [u8; 4usize],
+    _reserved20: [u8; 4usize],
     #[doc = "0xc8 - USB clock source divider"]
     pub usbclkdiv: USBCLKDIV,
-    _reserved11: [u8; 20usize],
+    _reserved21: [u8; 20usize],
     #[doc = "0xe0 - CLKOUT clock source select"]
     pub clkoutsel: CLKOUTSEL,
-    _reserved12: [u8; 4usize],
+    _reserved22: [u8; 4usize],
     #[doc = "0xe8 - CLKOUT clock divider"]
     pub clkoutdiv: CLKOUTDIV,
-    _reserved13: [u8; 20usize],
+    _reserved23: [u8; 20usize],
     #[doc = "0x100 - POR captured PIO status 0"]
     pub pioporcap0: PIOPORCAP0,
     #[doc = "0x104 - POR captured PIO status 1"]
     pub pioporcap1: PIOPORCAP1,
-    _reserved14: [u8; 72usize],
+    _reserved25: [u8; 72usize],
     #[doc = "0x150 - Brown-Out Detect"]
     pub bodctrl: BODCTRL,
     #[doc = "0x154 - System tick counter calibration"]
     pub systckcal: SYSTCKCAL,
-    _reserved15: [u8; 24usize],
+    _reserved27: [u8; 24usize],
     #[doc = "0x170 - IQR delay. Allows trade-off between interrupt latency and determinism."]
     pub irqlatency: IRQLATENCY,
     #[doc = "0x174 - NMI Source Control"]
@@ -81,20 +81,20 @@ pub struct RegisterBlock {
     pub usbclkctrl: USBCLKCTRL,
     #[doc = "0x19c - USB clock status"]
     pub usbclkst: USBCLKST,
-    _reserved16: [u8; 100usize],
+    _reserved32: [u8; 100usize],
     #[doc = "0x204 - Start logic 0 interrupt wake-up enable register 0"]
     pub starterp0: STARTERP0,
-    _reserved17: [u8; 12usize],
+    _reserved33: [u8; 12usize],
     #[doc = "0x214 - Start logic 1 interrupt wake-up enable register 1"]
     pub starterp1: STARTERP1,
-    _reserved18: [u8; 24usize],
+    _reserved34: [u8; 24usize],
     #[doc = "0x230 - Power-down states in deep-sleep mode"]
     pub pdsleepcfg: PDSLEEPCFG,
     #[doc = "0x234 - Power-down states for wake-up from deep-sleep"]
     pub pdawakecfg: PDAWAKECFG,
     #[doc = "0x238 - Power configuration register"]
     pub pdruncfg: PDRUNCFG,
-    _reserved19: [u8; 444usize],
+    _reserved37: [u8; 444usize],
     #[doc = "0x3f8 - Device ID"]
     pub device_id: DEVICE_ID,
 }
