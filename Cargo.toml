@@ -1,6 +1,6 @@
 [package]
 name = "lpc1347"
-version = "0.2.0"
+version = "0.2.1"
 authors = ["Axel Sundbom <axel.sundbom@grepit.se>",
            "Henrik Tjäder <henrik@grepit.se>"
           ]
