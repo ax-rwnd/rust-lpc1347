@@ -18945,7 +18945,7 @@ completed on channel n</description>
 			<baseAddress>0x50000000</baseAddress>
 			<addressBlock>
 				<offset>0</offset>
-				<size>0xFfFFF</size>
+				<size>0xFFFFF</size>
 				<usage>registers</usage>
 			</addressBlock>
 			<registers>
