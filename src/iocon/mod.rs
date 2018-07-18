@@ -61,17 +61,17 @@ pub struct RegisterBlock {
     pub pio1_4: PIO1_4,
     #[doc = "0x74 - I/O configuration for pin PIO1_5/CT32B1_CAP1"]
     pub pio1_5: PIO1_5,
-    _reserved0: [u8; 4usize],
+    _reserved30: [u8; 4usize],
     #[doc = "0x7c - I/O configuration for pin PIO1_7"]
     pub pio1_7: PIO1_7,
     #[doc = "0x80 - I/O configuration for pin PIO1_8"]
     pub pio1_8: PIO1_8,
-    _reserved1: [u8; 4usize],
+    _reserved32: [u8; 4usize],
     #[doc = "0x88 - I/O configuration for pin PIO1_10"]
     pub pio1_10: PIO1_10,
     #[doc = "0x8c - I/O configuration for pin PIO1_11"]
     pub pio1_11: PIO1_11,
-    _reserved2: [u8; 4usize],
+    _reserved34: [u8; 4usize],
     #[doc = "0x94 - I/O configuration for PIO1_13/DTR/CT16B0_MAT0/TXD"]
     pub pio1_13: PIO1_13,
     #[doc = "0x98 - I/O configuration for PIO1_14/DSR/CT16B0_MAT1/RXD"]
@@ -106,7 +106,7 @@ pub struct RegisterBlock {
     pub pio1_28: PIO1_28,
     #[doc = "0xd4 - I/O configuration for pin PIO1_29/SCK0/ CT32B0_CAP1"]
     pub pio1_29: PIO1_29,
-    _reserved3: [u8; 4usize],
+    _reserved51: [u8; 4usize],
     #[doc = "0xdc - I/O configuration for pin PIO1_31"]
     pub pio1_31: PIO1_31,
 }
