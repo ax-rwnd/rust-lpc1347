@@ -214,13 +214,13 @@ pub enum STARTR {
     PIO0_2,
     #[doc = "Start conversion when the edge selected by bit 27 occurs on PIO1_5/DIR/CT32B0_CAP0."]
     PIO1_5,
-    #[doc = "Start conversion when the edge selected by bit 27 occurs on CT32B0_MAT0[1]."]
+    #[doc = "Start conversion when the edge selected by bit 27 occurs on CT32B0_MAT0\\[1\\]."]
     CT32B0_MAT0,
-    #[doc = "Start conversion when the edge selected by bit 27 occurs on CT32B0_MAT1[1]."]
+    #[doc = "Start conversion when the edge selected by bit 27 occurs on CT32B0_MAT1\\[1\\]."]
     CT32B0_MAT1,
-    #[doc = "Start conversion when the edge selected by bit 27 occurs on CT16B0_MAT0[1]."]
+    #[doc = "Start conversion when the edge selected by bit 27 occurs on CT16B0_MAT0\\[1\\]."]
     CT16B0_MAT0,
-    #[doc = "Start conversion when the edge selected by bit 27 occurs on CT16B0_MAT1[1]."]
+    #[doc = "Start conversion when the edge selected by bit 27 occurs on CT16B0_MAT1\\[1\\]."]
     CT16B0_MAT1,
 }
 impl STARTR {
@@ -556,13 +556,13 @@ pub enum STARTW {
     PIO0_2,
     #[doc = "Start conversion when the edge selected by bit 27 occurs on PIO1_5/DIR/CT32B0_CAP0."]
     PIO1_5,
-    #[doc = "Start conversion when the edge selected by bit 27 occurs on CT32B0_MAT0[1]."]
+    #[doc = "Start conversion when the edge selected by bit 27 occurs on CT32B0_MAT0\\[1\\]."]
     CT32B0_MAT0,
-    #[doc = "Start conversion when the edge selected by bit 27 occurs on CT32B0_MAT1[1]."]
+    #[doc = "Start conversion when the edge selected by bit 27 occurs on CT32B0_MAT1\\[1\\]."]
     CT32B0_MAT1,
-    #[doc = "Start conversion when the edge selected by bit 27 occurs on CT16B0_MAT0[1]."]
+    #[doc = "Start conversion when the edge selected by bit 27 occurs on CT16B0_MAT0\\[1\\]."]
     CT16B0_MAT0,
-    #[doc = "Start conversion when the edge selected by bit 27 occurs on CT16B0_MAT1[1]."]
+    #[doc = "Start conversion when the edge selected by bit 27 occurs on CT16B0_MAT1\\[1\\]."]
     CT16B0_MAT1,
 }
 impl STARTW {
@@ -614,22 +614,22 @@ impl<'a> _STARTW<'a> {
     pub fn pio1_5(self) -> &'a mut W {
         self.variant(STARTW::PIO1_5)
     }
-    #[doc = "Start conversion when the edge selected by bit 27 occurs on CT32B0_MAT0[1]."]
+    #[doc = "Start conversion when the edge selected by bit 27 occurs on CT32B0_MAT0\\[1\\]."]
     #[inline]
     pub fn ct32b0_mat0(self) -> &'a mut W {
         self.variant(STARTW::CT32B0_MAT0)
     }
-    #[doc = "Start conversion when the edge selected by bit 27 occurs on CT32B0_MAT1[1]."]
+    #[doc = "Start conversion when the edge selected by bit 27 occurs on CT32B0_MAT1\\[1\\]."]
     #[inline]
     pub fn ct32b0_mat1(self) -> &'a mut W {
         self.variant(STARTW::CT32B0_MAT1)
     }
-    #[doc = "Start conversion when the edge selected by bit 27 occurs on CT16B0_MAT0[1]."]
+    #[doc = "Start conversion when the edge selected by bit 27 occurs on CT16B0_MAT0\\[1\\]."]
     #[inline]
     pub fn ct16b0_mat0(self) -> &'a mut W {
         self.variant(STARTW::CT16B0_MAT0)
     }
-    #[doc = "Start conversion when the edge selected by bit 27 occurs on CT16B0_MAT1[1]."]
+    #[doc = "Start conversion when the edge selected by bit 27 occurs on CT16B0_MAT1\\[1\\]."]
     #[inline]
     pub fn ct16b0_mat1(self) -> &'a mut W {
         self.variant(STARTW::CT16B0_MAT1)

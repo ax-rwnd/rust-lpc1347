@@ -101,7 +101,7 @@ impl WLSR {
 pub enum SBSR {
     #[doc = "1 stop bit."]
     _1_STOP_BIT_,
-    #[doc = "2 stop bits (1.5 if LCR[1:0]=00)."]
+    #[doc = "2 stop bits (1.5 if LCR\\[1:0\\]=00)."]
     _2_STOP_BITS_1_5_IF_,
 }
 impl SBSR {
@@ -251,7 +251,7 @@ impl PSR {
 pub enum BCR {
     #[doc = "Disable break transmission."]
     DISABLE_BREAK_TRANSM,
-    #[doc = "Enable break transmission. Output pin USART TXD is forced to logic 0 when LCR[6] is active high."]
+    #[doc = "Enable break transmission. Output pin USART TXD is forced to logic 0 when LCR\\[6\\] is active high."]
     ENABLE_BREAK_TRANSMI,
 }
 impl BCR {
@@ -410,7 +410,7 @@ impl<'a> _WLSW<'a> {
 pub enum SBSW {
     #[doc = "1 stop bit."]
     _1_STOP_BIT_,
-    #[doc = "2 stop bits (1.5 if LCR[1:0]=00)."]
+    #[doc = "2 stop bits (1.5 if LCR\\[1:0\\]=00)."]
     _2_STOP_BITS_1_5_IF_,
 }
 impl SBSW {
@@ -441,7 +441,7 @@ impl<'a> _SBSW<'a> {
     pub fn _1_stop_bit_(self) -> &'a mut W {
         self.variant(SBSW::_1_STOP_BIT_)
     }
-    #[doc = "2 stop bits (1.5 if LCR[1:0]=00)."]
+    #[doc = "2 stop bits (1.5 if LCR\\[1:0\\]=00)."]
     #[inline]
     pub fn _2_stop_bits_1_5_if_(self) -> &'a mut W {
         self.variant(SBSW::_2_STOP_BITS_1_5_IF_)
@@ -592,7 +592,7 @@ impl<'a> _PSW<'a> {
 pub enum BCW {
     #[doc = "Disable break transmission."]
     DISABLE_BREAK_TRANSM,
-    #[doc = "Enable break transmission. Output pin USART TXD is forced to logic 0 when LCR[6] is active high."]
+    #[doc = "Enable break transmission. Output pin USART TXD is forced to logic 0 when LCR\\[6\\] is active high."]
     ENABLE_BREAK_TRANSMI,
 }
 impl BCW {
@@ -623,7 +623,7 @@ impl<'a> _BCW<'a> {
     pub fn disable_break_transm(self) -> &'a mut W {
         self.variant(BCW::DISABLE_BREAK_TRANSM)
     }
-    #[doc = "Enable break transmission. Output pin USART TXD is forced to logic 0 when LCR[6] is active high."]
+    #[doc = "Enable break transmission. Output pin USART TXD is forced to logic 0 when LCR\\[6\\] is active high."]
     #[inline]
     pub fn enable_break_transmi(self) -> &'a mut W {
         self.variant(BCW::ENABLE_BREAK_TRANSMI)

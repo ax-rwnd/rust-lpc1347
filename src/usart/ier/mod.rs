@@ -685,7 +685,7 @@ impl R {
             ((self.bits >> OFFSET) & MASK as u32) != 0
         })
     }
-    #[doc = "Bit 1 - THRE Interrupt Enable. Enables the THRE interrupt. The status of this interrupt can be read from LSR[5]."]
+    #[doc = "Bit 1 - THRE Interrupt Enable. Enables the THRE interrupt. The status of this interrupt can be read from LSR\\[\\5\\]."]
     #[inline]
     pub fn threinten(&self) -> THREINTENR {
         THREINTENR::_from({
@@ -694,7 +694,7 @@ impl R {
             ((self.bits >> OFFSET) & MASK as u32) != 0
         })
     }
-    #[doc = "Bit 2 - Enables the Receive Line Status interrupt. The status of this interrupt can be read from LSR[4:1]."]
+    #[doc = "Bit 2 - Enables the Receive Line Status interrupt. The status of this interrupt can be read from LSR\\[4:1\\]."]
     #[inline]
     pub fn rlsinten(&self) -> RLSINTENR {
         RLSINTENR::_from({
@@ -748,12 +748,12 @@ impl W {
     pub fn rbrinten(&mut self) -> _RBRINTENW {
         _RBRINTENW { w: self }
     }
-    #[doc = "Bit 1 - THRE Interrupt Enable. Enables the THRE interrupt. The status of this interrupt can be read from LSR[5]."]
+    #[doc = "Bit 1 - THRE Interrupt Enable. Enables the THRE interrupt. The status of this interrupt can be read from LSR\\[\\5\\]."]
     #[inline]
     pub fn threinten(&mut self) -> _THREINTENW {
         _THREINTENW { w: self }
     }
-    #[doc = "Bit 2 - Enables the Receive Line Status interrupt. The status of this interrupt can be read from LSR[4:1]."]
+    #[doc = "Bit 2 - Enables the Receive Line Status interrupt. The status of this interrupt can be read from LSR\\[4:1\\]."]
     #[inline]
     pub fn rlsinten(&mut self) -> _RLSINTENW {
         _RLSINTENW { w: self }

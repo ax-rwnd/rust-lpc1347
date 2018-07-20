@@ -183,7 +183,7 @@ impl R {
     pub fn bits(&self) -> u32 {
         self.bits
     }
-    #[doc = "Bit 0 - Interrupt status. Note that IIR[0] is active low. The pending interrupt can be determined by evaluating IIR[3:1]."]
+    #[doc = "Bit 0 - Interrupt status. Note that IIR\\[0\\] is active low. The pending interrupt can be determined by evaluating IIR\\[3:1\\]."]
     #[inline]
     pub fn intstatus(&self) -> INTSTATUSR {
         INTSTATUSR::_from({
@@ -192,7 +192,7 @@ impl R {
             ((self.bits >> OFFSET) & MASK as u32) != 0
         })
     }
-    #[doc = "Bits 1:3 - Interrupt identification. IER[3:1] identifies an interrupt corresponding to the USART Rx FIFO. All other values of IER[3:1] not listed below are reserved."]
+    #[doc = "Bits 1:3 - Interrupt identification. IER\\[3:1\\] identifies an interrupt corresponding to the USART Rx FIFO. All other values of IER\\[3:1\\] not listed below are reserved."]
     #[inline]
     pub fn intid(&self) -> INTIDR {
         INTIDR::_from({
@@ -201,7 +201,7 @@ impl R {
             ((self.bits >> OFFSET) & MASK as u32) as u8
         })
     }
-    #[doc = "Bits 6:7 - These bits are equivalent to FCR[0]."]
+    #[doc = "Bits 6:7 - These bits are equivalent to FCR\\[0\\]."]
     #[inline]
     pub fn fifoen(&self) -> FIFOENR {
         let bits = {

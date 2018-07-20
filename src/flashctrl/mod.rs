@@ -10,13 +10,13 @@ pub struct RegisterBlock {
     #[doc = "0x24 - Signature stop-address register"]
     pub fmsstop: FMSSTOP,
     _reserved3: [u8; 4usize],
-    #[doc = "0x2c - Word 0 [31:0]"]
+    #[doc = "0x2c - Word 0 \\[31:0\\]"]
     pub fmsw0: FMSW0,
-    #[doc = "0x30 - Word 1 [63:32]"]
+    #[doc = "0x30 - Word 1 \\[63:32\\]"]
     pub fmsw1: FMSW1,
-    #[doc = "0x34 - Word 2 [95:64]"]
+    #[doc = "0x34 - Word 2 \\[95:64\\]"]
     pub fmsw2: FMSW2,
-    #[doc = "0x38 - Word 3 [127:96]"]
+    #[doc = "0x38 - Word 3 \\[127:96\\]"]
     pub fmsw3: FMSW3,
     _reserved7: [u8; 96usize],
     #[doc = "0x9c - EEPROM BIST start address register"]
@@ -68,29 +68,29 @@ pub struct FMSSTOP {
 }
 #[doc = "Signature stop-address register"]
 pub mod fmsstop;
-#[doc = "Word 0 [31:0]"]
+#[doc = "Word 0 \\[31:0\\]"]
 pub struct FMSW0 {
     register: ::vcell::VolatileCell<u32>,
 }
-#[doc = "Word 0 [31:0]"]
+#[doc = "Word 0 \\[31:0\\]"]
 pub mod fmsw0;
-#[doc = "Word 1 [63:32]"]
+#[doc = "Word 1 \\[63:32\\]"]
 pub struct FMSW1 {
     register: ::vcell::VolatileCell<u32>,
 }
-#[doc = "Word 1 [63:32]"]
+#[doc = "Word 1 \\[63:32\\]"]
 pub mod fmsw1;
-#[doc = "Word 2 [95:64]"]
+#[doc = "Word 2 \\[95:64\\]"]
 pub struct FMSW2 {
     register: ::vcell::VolatileCell<u32>,
 }
-#[doc = "Word 2 [95:64]"]
+#[doc = "Word 2 \\[95:64\\]"]
 pub mod fmsw2;
-#[doc = "Word 3 [127:96]"]
+#[doc = "Word 3 \\[127:96\\]"]
 pub struct FMSW3 {
     register: ::vcell::VolatileCell<u32>,
 }
-#[doc = "Word 3 [127:96]"]
+#[doc = "Word 3 \\[127:96\\]"]
 pub mod fmsw3;
 #[doc = "Signature generation status register"]
 pub struct FMSTAT {

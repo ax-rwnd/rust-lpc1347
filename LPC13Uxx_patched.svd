@@ -306,7 +306,7 @@
 								</enumeratedValue>
 								<enumeratedValue>
 									<name>NORMAL</name>
-									<description>When this bit is set, the I2C module may exercise the same control over the clock line that it would in normal operation. This means that, acting as a slave peripheral, the I2C module can stretch the clock line (hold it low) until it has had time to respond to an I2C interrupt.[1]</description>
+									<description>When this bit is set, the I2C module may exercise the same control over the clock line that it would in normal operation. This means that, acting as a slave peripheral, the I2C module can stretch the clock line (hold it low) until it has had time to respond to an I2C interrupt.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -764,7 +764,7 @@
 					</enumeratedValue>	
 					<enumeratedValue>	
 						<name>THE_TIMER_COUNTER_AN</name>
-						<description>The Timer Counter and the Prescale Counter are synchronously reset on the next positive edge of PCLK. The counters remain reset until TCR[1] is returned to zero.</description>
+						<description>The Timer Counter and the Prescale Counter are synchronously reset on the next positive edge of PCLK. The counters remain reset until TCR\[1\] is returned to zero.</description>
 						<value>1</value>
 					</enumeratedValue>	
 				</enumeratedValues>		
@@ -883,7 +883,7 @@
 			</field>			
 			<field>			
 				<name>MR0S</name>		
-				<description>Stop on MR0: the TC and PC will be stopped and TCR[0] will be set to 0 if MR0 matches the TC.</description>		
+				<description>Stop on MR0: the TC and PC will be stopped and TCR\[0\] will be set to 0 if MR0 matches the TC.</description>		
 				<bitRange>[2:2]</bitRange>		
 				<enumeratedValues>		
 				<name>ENUM</name>		
@@ -937,7 +937,7 @@
 			</field>			
 			<field>			
 				<name>MR1S</name>		
-				<description>Stop on MR1: the TC and PC will be stopped and TCR[0] will be set to 0 if MR1 matches the TC.</description>		
+				<description>Stop on MR1: the TC and PC will be stopped and TCR\[0\] will be set to 0 if MR1 matches the TC.</description>		
 				<bitRange>[5:5]</bitRange>		
 				<enumeratedValues>		
 				<name>ENUM</name>		
@@ -991,7 +991,7 @@
 			</field>			
 			<field>			
 				<name>MR2S</name>		
-				<description>Stop on MR2: the TC and PC will be stopped and TCR[0] will be set to 0 if MR2 matches the TC.</description>		
+				<description>Stop on MR2: the TC and PC will be stopped and TCR\[0\] will be set to 0 if MR2 matches the TC.</description>		
 				<bitRange>[8:8]</bitRange>		
 				<enumeratedValues>		
 				<name>ENUM</name>		
@@ -1045,7 +1045,7 @@
 			</field>			
 			<field>			
 				<name>MR3S</name>		
-				<description>Stop on MR3: the TC and PC will be stopped and TCR[0] will be set to 0 if MR3 matches the TC.</description>		
+				<description>Stop on MR3: the TC and PC will be stopped and TCR\[0\] will be set to 0 if MR3 matches the TC.</description>		
 				<bitRange>[11:11]</bitRange>		
 				<enumeratedValues>		
 				<name>ENUM</name>		
@@ -1276,7 +1276,7 @@
 	</register>					
 	<register>					
 		<name>EMR</name>				
-		<description>External Match Register. The EMR controls the match function and the external match pins CT16B0_MAT[1:0] and CT16B1_MAT[1:0].</description>				
+		<description>External Match Register. The EMR controls the match function and the external match pins CT16B0_MAT\[1:0\] and CT16B1_MAT\[1:0\].</description>
 		<addressOffset>0x03C</addressOffset>				
 		<access>read-write</access>				
 		<resetValue>0</resetValue>				
@@ -1284,25 +1284,25 @@
 		<fields>				
 			<field>			
 				<name>EM0</name>		
-				<description>External Match 0. This bit reflects the state of output CT16B0_MAT0/CT16B1_MAT0, whether or not this output is connected to its pin. When a match occurs between the TC and MR0, this bit can either toggle, go LOW, go HIGH, or do nothing. Bits EMR[5:4] control the functionality of this output. This bit is driven to the CT16B0_MAT0/CT16B1_MAT0 pins if the match function is selected in the IOCON registers (0 = LOW, 1 = HIGH).</description>		
+				<description>External Match 0. This bit reflects the state of output CT16B0_MAT0/CT16B1_MAT0, whether or not this output is connected to its pin. When a match occurs between the TC and MR0, this bit can either toggle, go LOW, go HIGH, or do nothing. Bits EMR\[5:4\] control the functionality of this output. This bit is driven to the CT16B0_MAT0/CT16B1_MAT0 pins if the match function is selected in the IOCON registers (0 = LOW, 1 = HIGH).</description>		
 				<bitRange>[0:0]</bitRange>		
 					
 			</field>			
 			<field>			
 				<name>EM1</name>		
-				<description>External Match 1. This bit reflects the state of output CT16B0_MAT1/CT16B1_MAT1, whether or not this output is connected to its pin. When a match occurs between the TC and MR1, this bit can either toggle, go LOW, go HIGH, or do nothing. Bits EMR[7:6] control the functionality of this output. This bit is driven to the CT16B0_MAT0/CT16B1_MAT0 pins if the match function is selected in the IOCON registers (0 = LOW, 1 = HIGH).</description>		
+				<description>External Match 1. This bit reflects the state of output CT16B0_MAT1/CT16B1_MAT1, whether or not this output is connected to its pin. When a match occurs between the TC and MR1, this bit can either toggle, go LOW, go HIGH, or do nothing. Bits EMR\[7:6\] control the functionality of this output. This bit is driven to the CT16B0_MAT0/CT16B1_MAT0 pins if the match function is selected in the IOCON registers (0 = LOW, 1 = HIGH).</description>		
 				<bitRange>[1:1]</bitRange>		
 					
 			</field>			
 			<field>			
 				<name>EM2</name>		
-				<description>External Match 2. This bit reflects the state of match channel 2. When a match occurs between the TC and MR2, this bit can either toggle, go LOW, go HIGH, or do nothing. Bits EMR[9:8] control the functionality of this output.</description>		
+				<description>External Match 2. This bit reflects the state of match channel 2. When a match occurs between the TC and MR2, this bit can either toggle, go LOW, go HIGH, or do nothing. Bits EMR\[9:8\] control the functionality of this output.</description>		
 				<bitRange>[2:2]</bitRange>		
 					
 			</field>			
 			<field>			
 				<name>EM3</name>		
-				<description>External Match 3. This bit reflects the state of output of match channel 3. When a match occurs between the TC and MR3, this bit can either toggle, go LOW, go HIGH, or do nothing. Bits EMR[11:10] control the functionality of this output.</description>		
+				<description>External Match 3. This bit reflects the state of output of match channel 3. When a match occurs between the TC and MR3, this bit can either toggle, go LOW, go HIGH, or do nothing. Bits EMR\[11:10\] control the functionality of this output.</description>		
 				<bitRange>[3:3]</bitRange>		
 					
 			</field>			
@@ -1539,7 +1539,7 @@
 	</register>					
 	<register>					
 		<name>PWMC</name>				
-		<description>PWM Control Register. The PWMCON enables PWM mode for the external match pins CT16B0_MAT[1:0] and CT16B1_MAT[1:0].</description>				
+		<description>PWM Control Register. The PWMCON enables PWM mode for the external match pins CT16B0_MAT\[1:0\] and CT16B1_MAT\[1:0\].</description>				
 		<addressOffset>0x074</addressOffset>				
 		<access>read-write</access>				
 		<resetValue>0</resetValue>				
@@ -1733,7 +1733,7 @@
 					</enumeratedValue>	
 					<enumeratedValue>	
 						<name>THE_TIMER_COUNTER_AN</name>
-						<description>The Timer Counter and the Prescale Counter are synchronously reset on the next positive edge of PCLK. The counters remain reset until TCR[1] is returned to zero.</description>
+						<description>The Timer Counter and the Prescale Counter are synchronously reset on the next positive edge of PCLK. The counters remain reset until TCR\[1\] is returned to zero.</description>
 						<value>1</value>
 					</enumeratedValue>	
 				</enumeratedValues>		
@@ -1852,7 +1852,7 @@
 			</field>			
 			<field>			
 				<name>MR0S</name>		
-				<description>Stop on MR0: the TC and PC will be stopped and TCR[0] will be set to 0 if MR0 matches the TC.</description>		
+				<description>Stop on MR0: the TC and PC will be stopped and TCR\[0\] will be set to 0 if MR0 matches the TC.</description>		
 				<bitRange>[2:2]</bitRange>		
 				<enumeratedValues>		
 				<name>ENUM</name>		
@@ -1906,7 +1906,7 @@
 			</field>			
 			<field>			
 				<name>MR1S</name>		
-				<description>Stop on MR1: the TC and PC will be stopped and TCR[0] will be set to 0 if MR1 matches the TC.</description>		
+				<description>Stop on MR1: the TC and PC will be stopped and TCR\[0\] will be set to 0 if MR1 matches the TC.</description>		
 				<bitRange>[5:5]</bitRange>		
 				<enumeratedValues>		
 				<name>ENUM</name>		
@@ -1960,7 +1960,7 @@
 			</field>			
 			<field>			
 				<name>MR2S</name>		
-				<description>Stop on MR2: the TC and PC will be stopped and TCR[0] will be set to 0 if MR2 matches the TC.</description>		
+				<description>Stop on MR2: the TC and PC will be stopped and TCR\[0\] will be set to 0 if MR2 matches the TC.</description>		
 				<bitRange>[8:8]</bitRange>		
 				<enumeratedValues>		
 				<name>ENUM</name>		
@@ -2014,7 +2014,7 @@
 			</field>			
 			<field>			
 				<name>MR3S</name>		
-				<description>Stop on MR3: the TC and PC will be stopped and TCR[0] will be set to 0 if MR3 matches the TC.</description>		
+				<description>Stop on MR3: the TC and PC will be stopped and TCR\[0\] will be set to 0 if MR3 matches the TC.</description>		
 				<bitRange>[11:11]</bitRange>		
 				<enumeratedValues>		
 				<name>ENUM</name>		
@@ -2227,7 +2227,7 @@
 	</register>					
 	<register>					
 		<name>EMR</name>				
-		<description>External Match Register. The EMR controls the match function and the external match pins CT16B0_MAT[1:0] and CT16B1_MAT[1:0].</description>				
+		<description>External Match Register. The EMR controls the match function and the external match pins CT16B0_MAT\[1:0\] and CT16B1_MAT\[1:0\].</description>
 		<addressOffset>0x03C</addressOffset>				
 		<access>read-write</access>				
 		<resetValue>0</resetValue>				
@@ -2235,25 +2235,25 @@
 		<fields>				
 			<field>			
 				<name>EM0</name>		
-				<description>External Match 0. This bit reflects the state of output CT16B0_MAT0/CT16B1_MAT0, whether or not this output is connected to its pin. When a match occurs between the TC and MR0, this bit can either toggle, go LOW, go HIGH, or do nothing. Bits EMR[5:4] control the functionality of this output. This bit is driven to the CT16B0_MAT0/CT16B1_MAT0 pins if the match function is selected in the IOCON registers (0 = LOW, 1 = HIGH).</description>		
+				<description>External Match 0. This bit reflects the state of output CT16B0_MAT0/CT16B1_MAT0, whether or not this output is connected to its pin. When a match occurs between the TC and MR0, this bit can either toggle, go LOW, go HIGH, or do nothing. Bits EMR\[5:4\] control the functionality of this output. This bit is driven to the CT16B0_MAT0/CT16B1_MAT0 pins if the match function is selected in the IOCON registers (0 = LOW, 1 = HIGH).</description>		
 				<bitRange>[0:0]</bitRange>		
 					
 			</field>			
 			<field>			
 				<name>EM1</name>		
-				<description>External Match 1. This bit reflects the state of output CT16B0_MAT1/CT16B1_MAT1, whether or not this output is connected to its pin. When a match occurs between the TC and MR1, this bit can either toggle, go LOW, go HIGH, or do nothing. Bits EMR[7:6] control the functionality of this output. This bit is driven to the CT16B0_MAT0/CT16B1_MAT0 pins if the match function is selected in the IOCON registers (0 = LOW, 1 = HIGH).</description>		
+				<description>External Match 1. This bit reflects the state of output CT16B0_MAT1/CT16B1_MAT1, whether or not this output is connected to its pin. When a match occurs between the TC and MR1, this bit can either toggle, go LOW, go HIGH, or do nothing. Bits EMR\[7:6\] control the functionality of this output. This bit is driven to the CT16B0_MAT0/CT16B1_MAT0 pins if the match function is selected in the IOCON registers (0 = LOW, 1 = HIGH).</description>		
 				<bitRange>[1:1]</bitRange>		
 					
 			</field>			
 			<field>			
 				<name>EM2</name>		
-				<description>External Match 2. This bit reflects the state of match channel 2. When a match occurs between the TC and MR2, this bit can either toggle, go LOW, go HIGH, or do nothing. Bits EMR[9:8] control the functionality of this output.</description>		
+				<description>External Match 2. This bit reflects the state of match channel 2. When a match occurs between the TC and MR2, this bit can either toggle, go LOW, go HIGH, or do nothing. Bits EMR\[9:8\] control the functionality of this output.</description>		
 				<bitRange>[2:2]</bitRange>		
 					
 			</field>			
 			<field>			
 				<name>EM3</name>		
-				<description>External Match 3. This bit reflects the state of output of match channel 3. When a match occurs between the TC and MR3, this bit can either toggle, go LOW, go HIGH, or do nothing. Bits EMR[11:10] control the functionality of this output.</description>		
+				<description>External Match 3. This bit reflects the state of output of match channel 3. When a match occurs between the TC and MR3, this bit can either toggle, go LOW, go HIGH, or do nothing. Bits EMR\[11:10\] control the functionality of this output.</description>		
 				<bitRange>[3:3]</bitRange>		
 					
 			</field>			
@@ -2485,7 +2485,7 @@
 	</register>					
 	<register>					
 		<name>PWMC</name>				
-		<description>PWM Control Register. The PWMCON enables PWM mode for the external match pins CT16B0_MAT[1:0] and CT16B1_MAT[1:0].</description>				
+		<description>PWM Control Register. The PWMCON enables PWM mode for the external match pins CT16B0_MAT\[1:0\] and CT16B1_MAT\[1:0\].</description>				
 		<addressOffset>0x074</addressOffset>				
 		<access>read-write</access>				
 		<resetValue>0</resetValue>				
@@ -2680,7 +2680,7 @@
 					</enumeratedValue>																		
 					<enumeratedValue>																		
 						<name>THE_TIMER_COUNTER_AN</name>																	
-						<description>The Timer Counter and the Prescale Counter are synchronously reset on the next positive edge of PCLK. The counters remain reset until TCR[1] is returned to zero.</description>																	
+						<description>The Timer Counter and the Prescale Counter are synchronously reset on the next positive edge of PCLK. The counters remain reset until TCR\[1\] is returned to zero.</description>																	
 						<value>1</value>																	
 					</enumeratedValue>																		
 				</enumeratedValues>																			
@@ -2784,7 +2784,7 @@
 			</field>																				
 			<field>																				
 				<name>MR0S</name>																			
-				<description>Stop on MR0: the TC and PC will be stopped and TCR[0] will be set to 0 if MR0 matches the TC.</description>																			
+				<description>Stop on MR0: the TC and PC will be stopped and TCR\[0\] will be set to 0 if MR0 matches the TC.</description>																			
 				<bitRange>[2:2]</bitRange>																			
 				<enumeratedValues>																			
 				<name>ENUM</name>																			
@@ -2838,7 +2838,7 @@
 			</field>																				
 			<field>																				
 				<name>MR1S</name>																			
-				<description>Stop on MR1: the TC and PC will be stopped and TCR[0] will be set to 0 if MR1 matches the TC.</description>																			
+				<description>Stop on MR1: the TC and PC will be stopped and TCR\[0\] will be set to 0 if MR1 matches the TC.</description>																			
 				<bitRange>[5:5]</bitRange>																			
 				<enumeratedValues>																			
 				<name>ENUM</name>																			
@@ -2892,7 +2892,7 @@
 			</field>																				
 			<field>																				
 				<name>MR2S</name>																			
-				<description>Stop on MR2: the TC and PC will be stopped and TCR[0] will be set to 0 if MR2 matches the TC.</description>																			
+				<description>Stop on MR2: the TC and PC will be stopped and TCR\[0\] will be set to 0 if MR2 matches the TC.</description>																			
 				<bitRange>[8:8]</bitRange>																			
 				<enumeratedValues>																			
 				<name>ENUM</name>																			
@@ -2946,7 +2946,7 @@
 			</field>																				
 			<field>																				
 				<name>MR3S</name>																			
-				<description>Stop on MR3: the TC and PC will be stopped and TCR[0] will be set to 0 if MR3 matches the TC.</description>																			
+				<description>Stop on MR3: the TC and PC will be stopped and TCR\[0\] will be set to 0 if MR3 matches the TC.</description>																			
 				<bitRange>[11:11]</bitRange>																			
 				<enumeratedValues>																			
 				<name>ENUM</name>																			
@@ -3152,7 +3152,7 @@
 																							
 	<register>																						
 		<name>EMR</name>																					
-		<description>External Match Register. The EMR controls the match function and the external match pins CT32Bn_MAT[3:0].</description>																					
+		<description>External Match Register. The EMR controls the match function and the external match pins CT32Bn_MAT\[3:0\].</description>																					
 		<addressOffset>0x03C</addressOffset>																					
 		<access>read-write</access>																					
 		<resetValue>0</resetValue>																					
@@ -3160,25 +3160,25 @@
 		<fields>																					
 			<field>																				
 				<name>EM0</name>																			
-				<description>External Match 0. This bit reflects the state of output CT32Bn_MAT0, whether or not this output is connected to its pin. When a match occurs between the TC and MR0, this bit can either toggle, go LOW, go HIGH, or do nothing. Bits EMR[5:4] control the functionality of this output. This bit is driven to the CT32B0_MAT0/CT32B1_MAT0 pins if the match function is selected in the IOCON registers (0 = LOW, 1 = HIGH).</description>																			
+				<description>External Match 0. This bit reflects the state of output CT32Bn_MAT0, whether or not this output is connected to its pin. When a match occurs between the TC and MR0, this bit can either toggle, go LOW, go HIGH, or do nothing. Bits EMR\[5:4\] control the functionality of this output. This bit is driven to the CT32B0_MAT0/CT32B1_MAT0 pins if the match function is selected in the IOCON registers (0 = LOW, 1 = HIGH).</description>																			
 				<bitRange>[0:0]</bitRange>																			
 																						
 			</field>																				
 			<field>																				
 				<name>EM1</name>																			
-				<description>External Match 1. This bit reflects the state of output CT32Bn_MAT1, whether or not this output is connected to its pin. When a match occurs between the TC and MR1, this bit can either toggle, go LOW, go HIGH, or do nothing. Bits EMR[7:6] control the functionality of this output. This bit is driven to the CT32B0_MAT1/CT32B1_MAT1 pins if the match function is selected in the IOCON registers (0 = LOW, 1 = HIGH).</description>																			
+				<description>External Match 1. This bit reflects the state of output CT32Bn_MAT1, whether or not this output is connected to its pin. When a match occurs between the TC and MR1, this bit can either toggle, go LOW, go HIGH, or do nothing. Bits EMR\[7:6\] control the functionality of this output. This bit is driven to the CT32B0_MAT1/CT32B1_MAT1 pins if the match function is selected in the IOCON registers (0 = LOW, 1 = HIGH).</description>																			
 				<bitRange>[1:1]</bitRange>																			
 																						
 			</field>																				
 			<field>																				
 				<name>EM2</name>																			
-				<description>External Match 2. This bit reflects the state of output CT32Bn_MAT2, whether or not this output is connected to its pin. When a match occurs between the TC and MR2, this bit can either toggle, go LOW, go HIGH, or do nothing. Bits EMR[9:8] control the functionality of this output. This bit is driven to the CT32B0_MAT2/CT32B1_MAT2 pins if the match function is selected in the IOCON registers (0 = LOW, 1 = HIGH).</description>																			
+				<description>External Match 2. This bit reflects the state of output CT32Bn_MAT2, whether or not this output is connected to its pin. When a match occurs between the TC and MR2, this bit can either toggle, go LOW, go HIGH, or do nothing. Bits EMR\[9:8\] control the functionality of this output. This bit is driven to the CT32B0_MAT2/CT32B1_MAT2 pins if the match function is selected in the IOCON registers (0 = LOW, 1 = HIGH).</description>																			
 				<bitRange>[2:2]</bitRange>																			
 																						
 			</field>																				
 			<field>																				
 				<name>EM3</name>																			
-				<description>External Match 3. This bit reflects the state of output CT32Bn_MAT3, whether or not this output is connected to its pin. When a match occurs between the TC and MR3, this bit can either toggle, go LOW, go HIGH, or do nothing. Bits EMR[11:10] control the functionality of this output. This bit is driven to the CT32B3_MAT0/CT32B1_MAT3 pins if the match function is selected in the IOCON registers (0 = LOW, 1 = HIGH).</description>																			
+				<description>External Match 3. This bit reflects the state of output CT32Bn_MAT3, whether or not this output is connected to its pin. When a match occurs between the TC and MR3, this bit can either toggle, go LOW, go HIGH, or do nothing. Bits EMR\[11:10\] control the functionality of this output. This bit is driven to the CT32B3_MAT0/CT32B1_MAT3 pins if the match function is selected in the IOCON registers (0 = LOW, 1 = HIGH).</description>																			
 				<bitRange>[3:3]</bitRange>																			
 																						
 			</field>																				
@@ -3416,7 +3416,7 @@
 																							
 	<register>																						
 		<name>PWMC</name>																					
-		<description>PWM Control Register. The PWMCON enables PWM mode for the external match pins CT32Bn_MAT[3:0].</description>																					
+		<description>PWM Control Register. The PWMCON enables PWM mode for the external match pins CT32Bn_MAT\[3:0\].</description>																					
 		<addressOffset>0x074</addressOffset>																					
 		<access>read-write</access>																					
 		<resetValue>0</resetValue>																					
@@ -3604,7 +3604,7 @@
 					</enumeratedValue>																		
 					<enumeratedValue>																		
 						<name>THE_TIMER_COUNTER_AN</name>																	
-						<description>The Timer Counter and the Prescale Counter are synchronously reset on the next positive edge of PCLK. The counters remain reset until TCR[1] is returned to zero.</description>																	
+						<description>The Timer Counter and the Prescale Counter are synchronously reset on the next positive edge of PCLK. The counters remain reset until TCR\[1\] is returned to zero.</description>																	
 						<value>1</value>																	
 					</enumeratedValue>																		
 				</enumeratedValues>																			
@@ -3708,7 +3708,7 @@
 			</field>																				
 			<field>																				
 				<name>MR0S</name>																			
-				<description>Stop on MR0: the TC and PC will be stopped and TCR[0] will be set to 0 if MR0 matches the TC.</description>																			
+				<description>Stop on MR0: the TC and PC will be stopped and TCR\[0\] will be set to 0 if MR0 matches the TC.</description>																			
 				<bitRange>[2:2]</bitRange>																			
 				<enumeratedValues>																			
 				<name>ENUM</name>																			
@@ -3762,7 +3762,7 @@
 			</field>																				
 			<field>																				
 				<name>MR1S</name>																			
-				<description>Stop on MR1: the TC and PC will be stopped and TCR[0] will be set to 0 if MR1 matches the TC.</description>																			
+				<description>Stop on MR1: the TC and PC will be stopped and TCR\[0\] will be set to 0 if MR1 matches the TC.</description>																			
 				<bitRange>[5:5]</bitRange>																			
 				<enumeratedValues>																			
 				<name>ENUM</name>																			
@@ -3816,7 +3816,7 @@
 			</field>																				
 			<field>																				
 				<name>MR2S</name>																			
-				<description>Stop on MR2: the TC and PC will be stopped and TCR[0] will be set to 0 if MR2 matches the TC.</description>																			
+				<description>Stop on MR2: the TC and PC will be stopped and TCR\[0\] will be set to 0 if MR2 matches the TC.</description>																			
 				<bitRange>[8:8]</bitRange>																			
 				<enumeratedValues>																			
 				<name>ENUM</name>																			
@@ -3870,7 +3870,7 @@
 			</field>																				
 			<field>																				
 				<name>MR3S</name>																			
-				<description>Stop on MR3: the TC and PC will be stopped and TCR[0] will be set to 0 if MR3 matches the TC.</description>																			
+				<description>Stop on MR3: the TC and PC will be stopped and TCR\[0\] will be set to 0 if MR3 matches the TC.</description>																			
 				<bitRange>[11:11]</bitRange>																			
 				<enumeratedValues>																			
 				<name>ENUM</name>																			
@@ -4070,7 +4070,7 @@
 	</register>																						
 	<register>																						
 		<name>EMR</name>																					
-		<description>External Match Register. The EMR controls the match function and the external match pins CT32Bn_MAT[3:0].</description>																					
+		<description>External Match Register. The EMR controls the match function and the external match pins CT32Bn_MAT\[3:0\].</description>																					
 		<addressOffset>0x03C</addressOffset>																					
 		<access>read-write</access>																					
 		<resetValue>0</resetValue>																					
@@ -4078,25 +4078,25 @@
 		<fields>																					
 			<field>																				
 				<name>EM0</name>																			
-				<description>External Match 0. This bit reflects the state of output CT32Bn_MAT0, whether or not this output is connected to its pin. When a match occurs between the TC and MR0, this bit can either toggle, go LOW, go HIGH, or do nothing. Bits EMR[5:4] control the functionality of this output. This bit is driven to the CT32B0_MAT0/CT32B1_MAT0 pins if the match function is selected in the IOCON registers (0 = LOW, 1 = HIGH).</description>																			
+				<description>External Match 0. This bit reflects the state of output CT32Bn_MAT0, whether or not this output is connected to its pin. When a match occurs between the TC and MR0, this bit can either toggle, go LOW, go HIGH, or do nothing. Bits EMR\[5:4\] control the functionality of this output. This bit is driven to the CT32B0_MAT0/CT32B1_MAT0 pins if the match function is selected in the IOCON registers (0 = LOW, 1 = HIGH).</description>																			
 				<bitRange>[0:0]</bitRange>																			
 																						
 			</field>																				
 			<field>																				
 				<name>EM1</name>																			
-				<description>External Match 1. This bit reflects the state of output CT32Bn_MAT1, whether or not this output is connected to its pin. When a match occurs between the TC and MR1, this bit can either toggle, go LOW, go HIGH, or do nothing. Bits EMR[7:6] control the functionality of this output. This bit is driven to the CT32B0_MAT1/CT32B1_MAT1 pins if the match function is selected in the IOCON registers (0 = LOW, 1 = HIGH).</description>																			
+				<description>External Match 1. This bit reflects the state of output CT32Bn_MAT1, whether or not this output is connected to its pin. When a match occurs between the TC and MR1, this bit can either toggle, go LOW, go HIGH, or do nothing. Bits EMR\[7:6\] control the functionality of this output. This bit is driven to the CT32B0_MAT1/CT32B1_MAT1 pins if the match function is selected in the IOCON registers (0 = LOW, 1 = HIGH).</description>																			
 				<bitRange>[1:1]</bitRange>																			
 																						
 			</field>																				
 			<field>																				
 				<name>EM2</name>																			
-				<description>External Match 2. This bit reflects the state of output CT32Bn_MAT2, whether or not this output is connected to its pin. When a match occurs between the TC and MR2, this bit can either toggle, go LOW, go HIGH, or do nothing. Bits EMR[9:8] control the functionality of this output. This bit is driven to the CT32B0_MAT2/CT32B1_MAT2 pins if the match function is selected in the IOCON registers (0 = LOW, 1 = HIGH).</description>																			
+				<description>External Match 2. This bit reflects the state of output CT32Bn_MAT2, whether or not this output is connected to its pin. When a match occurs between the TC and MR2, this bit can either toggle, go LOW, go HIGH, or do nothing. Bits EMR\[9:8\] control the functionality of this output. This bit is driven to the CT32B0_MAT2/CT32B1_MAT2 pins if the match function is selected in the IOCON registers (0 = LOW, 1 = HIGH).</description>																			
 				<bitRange>[2:2]</bitRange>																			
 																						
 			</field>																				
 			<field>																				
 				<name>EM3</name>																			
-				<description>External Match 3. This bit reflects the state of output CT32Bn_MAT3, whether or not this output is connected to its pin. When a match occurs between the TC and MR3, this bit can either toggle, go LOW, go HIGH, or do nothing. Bits EMR[11:10] control the functionality of this output. This bit is driven to the CT32B3_MAT0/CT32B1_MAT3 pins if the match function is selected in the IOCON registers (0 = LOW, 1 = HIGH).</description>																			
+				<description>External Match 3. This bit reflects the state of output CT32Bn_MAT3, whether or not this output is connected to its pin. When a match occurs between the TC and MR3, this bit can either toggle, go LOW, go HIGH, or do nothing. Bits EMR\[11:10\] control the functionality of this output. This bit is driven to the CT32B3_MAT0/CT32B1_MAT3 pins if the match function is selected in the IOCON registers (0 = LOW, 1 = HIGH).</description>																			
 				<bitRange>[3:3]</bitRange>																			
 																						
 			</field>																				
@@ -4319,7 +4319,7 @@
 	</register>																						
 	<register>																						
 		<name>PWMC</name>																					
-		<description>PWM Control Register. The PWMCON enables PWM mode for the external match pins CT32Bn_MAT[3:0].</description>																					
+		<description>PWM Control Register. The PWMCON enables PWM mode for the external match pins CT32Bn_MAT\[3:0\].</description>																					
 		<addressOffset>0x074</addressOffset>																					
 		<access>read-write</access>																					
 		<resetValue>0</resetValue>																					
@@ -4536,7 +4536,7 @@
 						</field>
 						<field>
 							<name>THREINTEN</name>
-							<description>THRE Interrupt Enable. Enables the THRE interrupt. The status of this interrupt can be read from LSR[5].</description>
+							<description>THRE Interrupt Enable. Enables the THRE interrupt. The status of this interrupt can be read from LSR\[\5\].</description>
 							<bitRange>[1:1]</bitRange>
 							<enumeratedValues>
 								<name>ENUM</name>
@@ -4554,7 +4554,7 @@
 						</field>
 						<field>
 							<name>RLSINTEN</name>
-							<description>Enables the Receive Line Status interrupt. The status of this interrupt can be read from LSR[4:1].</description>
+							<description>Enables the Receive Line Status interrupt. The status of this interrupt can be read from LSR\[4:1\].</description>
 							<bitRange>[2:2]</bitRange>
 							<enumeratedValues>
 								<name>ENUM</name>
@@ -4648,7 +4648,7 @@
 					<fields>
 						<field>
 							<name>INTSTATUS</name>
-							<description>Interrupt status. Note that IIR[0] is active low. The pending interrupt can be determined by evaluating IIR[3:1].</description>
+							<description>Interrupt status. Note that IIR\[0\] is active low. The pending interrupt can be determined by evaluating IIR\[3:1\].</description>
 							<bitRange>[0:0]</bitRange>
 							<enumeratedValues>
 								<name>ENUM</name>
@@ -4666,7 +4666,7 @@
 						</field>
 						<field>
 							<name>INTID</name>
-							<description>Interrupt identification. IER[3:1] identifies an interrupt corresponding to the USART Rx FIFO. All other values of IER[3:1] not listed below are reserved.</description>
+							<description>Interrupt identification. IER\[3:1\] identifies an interrupt corresponding to the USART Rx FIFO. All other values of IER\[3:1\] not listed below are reserved.</description>
 							<bitRange>[3:1]</bitRange>
 							<enumeratedValues>
 								<name>ENUM</name>
@@ -4705,7 +4705,7 @@
 						</field>
 						<field>
 							<name>FIFOEN</name>
-							<description>These bits are equivalent to FCR[0].</description>
+							<description>These bits are equivalent to FCR\[0\].</description>
 							<bitRange>[7:6]</bitRange>
 
 						</field>
@@ -4750,7 +4750,7 @@
 								</enumeratedValue>
 								<enumeratedValue>
 									<name>ENABLED</name>
-									<description>Active high enable for both USART Rx and TX FIFOs and FCR[7:1] access. This bit must be set for proper USART operation. Any transition on this bit will automatically clear the USART FIFOs.</description>
+									<description>Active high enable for both USART Rx and TX FIFOs and FCR\[7:1\] access. This bit must be set for proper USART operation. Any transition on this bit will automatically clear the USART FIFOs.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -4768,7 +4768,7 @@
 								</enumeratedValue>
 								<enumeratedValue>
 									<name>CLEAR</name>
-									<description>Writing a logic 1 to FCR[1] will clear all bytes in USART Rx FIFO, reset the pointer logic. This bit is self-clearing.</description>
+									<description>Writing a logic 1 to FCR\[1\] will clear all bytes in USART Rx FIFO, reset the pointer logic. This bit is self-clearing.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -4786,7 +4786,7 @@
 								</enumeratedValue>
 								<enumeratedValue>
 									<name>CLEAR</name>
-									<description>Writing a logic 1 to FCR[2] will clear all bytes in USART TX FIFO, reset the pointer logic. This bit is self-clearing.</description>
+									<description>Writing a logic 1 to FCR\[2\] will clear all bytes in USART TX FIFO, reset the pointer logic. This bit is self-clearing.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -4888,7 +4888,7 @@
 								</enumeratedValue>
 								<enumeratedValue>
 									<name>2_STOP_BITS_1_5_IF_</name>
-									<description>2 stop bits (1.5 if LCR[1:0]=00).</description>
+									<description>2 stop bits (1.5 if LCR\[1:0\]=00).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -4952,7 +4952,7 @@
 								</enumeratedValue>
 								<enumeratedValue>
 									<name>ENABLE_BREAK_TRANSMI</name>
-									<description>Enable break transmission. Output pin USART TXD is forced to logic 0 when LCR[6] is active high.</description>
+									<description>Enable break transmission. Output pin USART TXD is forced to logic 0 when LCR\[6\] is active high.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -5088,7 +5088,7 @@
 					<fields>
 						<field>
 							<name>RDR</name>
-							<description>Receiver Data Ready:LSR[0] is set when the RBR holds an unread character and is cleared when the USART RBR FIFO is empty.</description>
+							<description>Receiver Data Ready:LSR\[0\] is set when the RBR holds an unread character and is cleared when the USART RBR FIFO is empty.</description>
 							<bitRange>[0:0]</bitRange>
 							<enumeratedValues>
 								<name>ENUM</name>
@@ -5106,7 +5106,7 @@
 						</field>
 						<field>
 							<name>OE</name>
-							<description>Overrun Error. The overrun error condition is set as soon as it occurs. A LSR read clears LSR[1]. LSR[1] is set when USART RSR has a new character assembled and the USART RBR FIFO is full. In this case, the USART RBR FIFO will not be overwritten and the character in the USART RSR will be lost.</description>
+							<description>Overrun Error. The overrun error condition is set as soon as it occurs. A LSR read clears LSR\[1\]. LSR\[1\] is set when USART RSR has a new character assembled and the USART RBR FIFO is full. In this case, the USART RBR FIFO will not be overwritten and the character in the USART RSR will be lost.</description>
 							<bitRange>[1:1]</bitRange>
 							<enumeratedValues>
 								<name>ENUM</name>
@@ -5124,7 +5124,7 @@
 						</field>
 						<field>
 							<name>PE</name>
-							<description>Parity Error. When the parity bit of a received character is in the wrong state, a parity error occurs. A LSR read clears LSR[2]. Time of parity error detection is dependent on FCR[0]. Note: A parity error is associated with the character at the top of the USART RBR FIFO.</description>
+							<description>Parity Error. When the parity bit of a received character is in the wrong state, a parity error occurs. A LSR read clears LSR\[2\]. Time of parity error detection is dependent on FCR\[0\]. Note: A parity error is associated with the character at the top of the USART RBR FIFO.</description>
 							<bitRange>[2:2]</bitRange>
 							<enumeratedValues>
 								<name>ENUM</name>
@@ -5142,7 +5142,7 @@
 						</field>
 						<field>
 							<name>FE</name>
-							<description>Framing Error. When the stop bit of a received character is a logic 0, a framing error occurs. A LSR read clears LSR[3]. The time of the framing error detection is dependent on FCR0. Upon detection of a framing error, the RX will attempt to re-synchronize to the data and assume that the bad stop bit is actually an early start bit. However, it cannot be assumed that the next received byte will be correct even if there is no Framing Error. Note: A framing error is associated with the character at the top of the USART RBR FIFO.</description>
+							<description>Framing Error. When the stop bit of a received character is a logic 0, a framing error occurs. A LSR read clears LSR\[3\]. The time of the framing error detection is dependent on FCR0. Upon detection of a framing error, the RX will attempt to re-synchronize to the data and assume that the bad stop bit is actually an early start bit. However, it cannot be assumed that the next received byte will be correct even if there is no Framing Error. Note: A framing error is associated with the character at the top of the USART RBR FIFO.</description>
 							<bitRange>[3:3]</bitRange>
 							<enumeratedValues>
 								<name>ENUM</name>
@@ -5160,7 +5160,7 @@
 						</field>
 						<field>
 							<name>BI</name>
-							<description>Break Interrupt. When RXD1 is held in the spacing state (all zeros) for one full character transmission (start, data, parity, stop), a break interrupt occurs. Once the break condition has been detected, the receiver goes idle until RXD1 goes to marking state (all ones). A LSR read clears this status bit. The time of break detection is dependent on FCR[0]. Note: The break interrupt is associated with the character at the top of the USART RBR FIFO.</description>
+							<description>Break Interrupt. When RXD1 is held in the spacing state (all zeros) for one full character transmission (start, data, parity, stop), a break interrupt occurs. Once the break condition has been detected, the receiver goes idle until RXD1 goes to marking state (all ones). A LSR read clears this status bit. The time of break detection is dependent on FCR\[0\]. Note: The break interrupt is associated with the character at the top of the USART RBR FIFO.</description>
 							<bitRange>[4:4]</bitRange>
 							<enumeratedValues>
 								<name>ENUM</name>
@@ -5214,13 +5214,13 @@
 						</field>
 						<field>
 							<name>RXFE</name>
-							<description>Error in RX FIFO. LSR[7] is set when a character with a RX error such as framing error, parity error or break interrupt, is loaded into the RBR. This bit is cleared when the LSR register is read and there are no subsequent errors in the USART FIFO.</description>
+							<description>Error in RX FIFO. LSR\[7\] is set when a character with a RX error such as framing error, parity error or break interrupt, is loaded into the RBR. This bit is cleared when the LSR register is read and there are no subsequent errors in the USART FIFO.</description>
 							<bitRange>[7:7]</bitRange>
 							<enumeratedValues>
 								<name>ENUM</name>
 								<enumeratedValue>
 									<name>NO_ERROR</name>
-									<description>RBR contains no USART RX errors or FCR[0]=0.</description>
+									<description>RBR contains no USART RX errors or FCR\[0\]=0.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
@@ -5327,25 +5327,25 @@
 						</field>
 						<field>
 							<name>CTS</name>
-							<description>Clear To Send State. Complement of input signal CTS. This bit is connected to MCR[1] in modem loopback mode.</description>
+							<description>Clear To Send State. Complement of input signal CTS. This bit is connected to MCR\[1\] in modem loopback mode.</description>
 							<bitRange>[4:4]</bitRange>
 
 						</field>
 						<field>
 							<name>DSR</name>
-							<description>Data Set Ready State. Complement of input signal DSR. This bit is connected to MCR[0] in modem loopback mode.</description>
+							<description>Data Set Ready State. Complement of input signal DSR. This bit is connected to MCR\[0\] in modem loopback mode.</description>
 							<bitRange>[5:5]</bitRange>
 
 						</field>
 						<field>
 							<name>RI</name>
-							<description>Ring Indicator State. Complement of input RI. This bit is connected to MCR[2] in modem loopback mode.</description>
+							<description>Ring Indicator State. Complement of input RI. This bit is connected to MCR\[2\] in modem loopback mode.</description>
 							<bitRange>[6:6]</bitRange>
 
 						</field>
 						<field>
 							<name>DCD</name>
-							<description>Data Carrier Detect State. Complement of input DCD. This bit is connected to MCR[3] in modem loopback mode.</description>
+							<description>Data Carrier Detect State. Complement of input DCD. This bit is connected to MCR\[3\] in modem loopback mode.</description>
 							<bitRange>[7:7]</bitRange>
 
 						</field>
@@ -6255,22 +6255,22 @@
 						</enumeratedValue>
 						<enumeratedValue>
 							<name>CT32B0_MAT0</name>
-							<description>Start conversion when the edge selected by bit 27 occurs on CT32B0_MAT0[1].</description>
+							<description>Start conversion when the edge selected by bit 27 occurs on CT32B0_MAT0\[1\].</description>
 							<value>0x4</value>
 						</enumeratedValue>
 						<enumeratedValue>
 							<name>CT32B0_MAT1</name>
-							<description>Start conversion when the edge selected by bit 27 occurs on CT32B0_MAT1[1].</description>
+							<description>Start conversion when the edge selected by bit 27 occurs on CT32B0_MAT1\[1\].</description>
 							<value>0x5</value>
 						</enumeratedValue>
 						<enumeratedValue>
 							<name>CT16B0_MAT0</name>
-							<description>Start conversion when the edge selected by bit 27 occurs on CT16B0_MAT0[1].</description>
+							<description>Start conversion when the edge selected by bit 27 occurs on CT16B0_MAT0\[1\].</description>
 							<value>0x6</value>
 						</enumeratedValue>
 						<enumeratedValue>
 							<name>CT16B0_MAT1</name>
-							<description>Start conversion when the edge selected by bit 27 occurs on CT16B0_MAT1[1].</description>
+							<description>Start conversion when the edge selected by bit 27 occurs on CT16B0_MAT1\[1\].</description>
 							<value>0x7</value>
 						</enumeratedValue>
 					</enumeratedValues>
@@ -6780,7 +6780,7 @@ completed on channel n</description>
 			<fields>
 				<field>
 					<name>START</name>
-					<description>Signature generation start address (corresponds to AHB byte address bits[20:4]).</description>
+					<description>Signature generation start address (corresponds to AHB byte address bits\[20:4\]).</description>
 					<bitRange>[16:0]</bitRange>
 				</field>
 				<field>
@@ -6800,7 +6800,7 @@ completed on channel n</description>
 			<fields>
 				<field>
 					<name>STOP</name>
-					<description>BIST stop address divided by 16 (corresponds to AHB byte address [20:4]).</description>
+					<description>BIST stop address divided by 16 (corresponds to AHB byte address \[20:4\]).</description>
 					<bitRange>[16:0]</bitRange>
 
 				</field>
@@ -6832,7 +6832,7 @@ completed on channel n</description>
 		</register>
 		<register>
 			<name>FMSW0</name>
-			<description>Word 0 [31:0]</description>
+			<description>Word 0 \[31:0\]</description>
 			<addressOffset>0x02C</addressOffset>
 			<access>read-only</access>
 			<resetValue>0</resetValue>
@@ -6847,7 +6847,7 @@ completed on channel n</description>
 		</register>
 		<register>
 			<name>FMSW1</name>
-			<description>Word 1 [63:32]</description>
+			<description>Word 1 \[63:32\]</description>
 			<addressOffset>0x030</addressOffset>
 			<access>read-only</access>
 			<resetValue>0</resetValue>
@@ -6862,7 +6862,7 @@ completed on channel n</description>
 		</register>
 		<register>
 			<name>FMSW2</name>
-			<description>Word 2 [95:64]</description>
+			<description>Word 2 \[95:64\]</description>
 			<addressOffset>0x034</addressOffset>
 			<access>read-only</access>
 			<resetValue>0</resetValue>
@@ -6877,7 +6877,7 @@ completed on channel n</description>
 		</register>
 		<register>
 			<name>FMSW3</name>
-			<description>Word 3 [127:96]</description>
+			<description>Word 3 \[127:96\]</description>
 			<addressOffset>0x038</addressOffset>
 			<access>read-only</access>
 			<resetValue>0</resetValue>
@@ -7105,7 +7105,7 @@ completed on channel n</description>
 						</field>
 						<field>
 							<name>SCR</name>
-							<description>Serial Clock Rate. The number of prescaler output clocks per bit on the bus, minus one. Given that CPSDVSR is the prescale divider, and the APB clock PCLK clocks the prescaler, the bit frequency is PCLK / (CPSDVSR X [SCR+1]).</description>
+							<description>Serial Clock Rate. The number of prescaler output clocks per bit on the bus, minus one. Given that CPSDVSR is the prescale divider, and the APB clock PCLK clocks the prescaler, the bit frequency is PCLK / (CPSDVSR X \[SCR+1\]).</description>
 							<bitRange>[15:8]</bitRange>
 
 						</field>
@@ -7289,7 +7289,7 @@ completed on channel n</description>
 						</field>
 						<field>
 							<name>RTIM</name>
-							<description>Software should set this bit to enable interrupt when a Receive Time-out condition occurs. A Receive Time-out occurs when the Rx FIFO is not empty, and no has not been read for a time-out period. The time-out period is the same for master and slave modes and is determined by the SSP bit rate: 32 bits at PCLK / (CPSDVSR X [SCR+1]).</description>
+							<description>Software should set this bit to enable interrupt when a Receive Time-out condition occurs. A Receive Time-out occurs when the Rx FIFO is not empty, and no has not been read for a time-out period. The time-out period is the same for master and slave modes and is determined by the SSP bit rate: 32 bits at PCLK / (CPSDVSR X \[SCR+1\]).</description>
 							<bitRange>[1:1]</bitRange>
 						</field>
 						<field>
@@ -7324,7 +7324,7 @@ completed on channel n</description>
 						</field>
 						<field>
 							<name>RTRIS</name>
-							<description>This bit is 1 if the Rx FIFO is not empty, and has not been read for a time-out period. The time-out period is the same for master and slave modes and is determined by the SSP bit rate: 32 bits at PCLK / (CPSDVSR X [SCR+1]).</description>
+							<description>This bit is 1 if the Rx FIFO is not empty, and has not been read for a time-out period. The time-out period is the same for master and slave modes and is determined by the SSP bit rate: 32 bits at PCLK / (CPSDVSR X \[SCR+1\]).</description>
 							<bitRange>[1:1]</bitRange>
 						</field>
 						<field>
@@ -7359,7 +7359,7 @@ completed on channel n</description>
 						</field>
 						<field>
 							<name>RTMIS</name>
-							<description>This bit is 1 if the Rx FIFO is not empty, has not been read for a time-out period, and this interrupt is enabled. The time-out period is the same for master and slave modes and is determined by the SSP bit rate: 32 bits at PCLK / (CPSDVSR X [SCR+1]).</description>
+							<description>This bit is 1 if the Rx FIFO is not empty, has not been read for a time-out period, and this interrupt is enabled. The time-out period is the same for master and slave modes and is determined by the SSP bit rate: 32 bits at PCLK / (CPSDVSR X \[SCR+1\]).</description>
 							<bitRange>[1:1]</bitRange>
 						</field>
 						<field>
@@ -7394,7 +7394,7 @@ completed on channel n</description>
 						</field>
 						<field>
 							<name>RTIC</name>
-							<description>Writing a 1 to this bit clears the Rx FIFO was not empty and has not been read for a timeout period interrupt. The timeout period is the same for master and slave modes and is determined by the SSP bit rate: 32 bits at PCLK / (CPSDVSR X [SCR+1]).</description>
+							<description>Writing a 1 to this bit clears the Rx FIFO was not empty and has not been read for a timeout period interrupt. The timeout period is the same for master and slave modes and is determined by the SSP bit rate: 32 bits at PCLK / (CPSDVSR X \[SCR+1\]).</description>
 							<bitRange>[1:1]</bitRange>
 						</field>
 						<field>

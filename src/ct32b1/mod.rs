@@ -22,12 +22,12 @@ pub struct RegisterBlock {
     #[doc = "0x30 - Capture Register 1. CR1 is loaded with the value of TC when there is an event on the CT32B1_CAP1 input."]
     pub cr1: CR1,
     _reserved10: [u8; 8usize],
-    #[doc = "0x3c - External Match Register. The EMR controls the match function and the external match pins CT32Bn_MAT[3:0]."]
+    #[doc = "0x3c - External Match Register. The EMR controls the match function and the external match pins CT32Bn_MAT\\[3:0\\]."]
     pub emr: EMR,
     _reserved11: [u8; 48usize],
     #[doc = "0x70 - Count Control Register. The CTCR selects between Timer and Counter mode, and in Counter mode selects the signal and edge(s) for counting."]
     pub ctcr: CTCR,
-    #[doc = "0x74 - PWM Control Register. The PWMCON enables PWM mode for the external match pins CT32Bn_MAT[3:0]."]
+    #[doc = "0x74 - PWM Control Register. The PWMCON enables PWM mode for the external match pins CT32Bn_MAT\\[3:0\\]."]
     pub pwmc: PWMC,
 }
 #[doc = "Interrupt Register. The IR can be written to clear interrupts. The IR can be read to identify which of eight possible interrupt sources are pending."]
@@ -90,11 +90,11 @@ pub struct CR1 {
 }
 #[doc = "Capture Register 1. CR1 is loaded with the value of TC when there is an event on the CT32B1_CAP1 input."]
 pub mod cr1;
-#[doc = "External Match Register. The EMR controls the match function and the external match pins CT32Bn_MAT[3:0]."]
+#[doc = "External Match Register. The EMR controls the match function and the external match pins CT32Bn_MAT\\[3:0\\]."]
 pub struct EMR {
     register: ::vcell::VolatileCell<u32>,
 }
-#[doc = "External Match Register. The EMR controls the match function and the external match pins CT32Bn_MAT[3:0]."]
+#[doc = "External Match Register. The EMR controls the match function and the external match pins CT32Bn_MAT\\[3:0\\]."]
 pub mod emr;
 #[doc = "Count Control Register. The CTCR selects between Timer and Counter mode, and in Counter mode selects the signal and edge(s) for counting."]
 pub struct CTCR {
@@ -102,9 +102,9 @@ pub struct CTCR {
 }
 #[doc = "Count Control Register. The CTCR selects between Timer and Counter mode, and in Counter mode selects the signal and edge(s) for counting."]
 pub mod ctcr;
-#[doc = "PWM Control Register. The PWMCON enables PWM mode for the external match pins CT32Bn_MAT[3:0]."]
+#[doc = "PWM Control Register. The PWMCON enables PWM mode for the external match pins CT32Bn_MAT\\[3:0\\]."]
 pub struct PWMC {
     register: ::vcell::VolatileCell<u32>,
 }
-#[doc = "PWM Control Register. The PWMCON enables PWM mode for the external match pins CT32Bn_MAT[3:0]."]
+#[doc = "PWM Control Register. The PWMCON enables PWM mode for the external match pins CT32Bn_MAT\\[3:0\\]."]
 pub mod pwmc;

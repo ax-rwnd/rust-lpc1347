@@ -72,7 +72,7 @@ impl R {
     pub fn bits(&self) -> u32 {
         self.bits
     }
-    #[doc = "Bits 0:16 - Signature generation start address (corresponds to AHB byte address bits[20:4])."]
+    #[doc = "Bits 0:16 - Signature generation start address (corresponds to AHB byte address bits\\[20:4\\])."]
     #[inline]
     pub fn start(&self) -> STARTR {
         let bits = {
@@ -95,7 +95,7 @@ impl W {
         self.bits = bits;
         self
     }
-    #[doc = "Bits 0:16 - Signature generation start address (corresponds to AHB byte address bits[20:4])."]
+    #[doc = "Bits 0:16 - Signature generation start address (corresponds to AHB byte address bits\\[20:4\\])."]
     #[inline]
     pub fn start(&mut self) -> _STARTW {
         _STARTW { w: self }

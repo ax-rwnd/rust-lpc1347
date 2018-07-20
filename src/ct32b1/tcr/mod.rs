@@ -92,7 +92,7 @@ impl CENR {
 pub enum CRSTR {
     #[doc = "Do nothing."]
     DO_NOTHING_,
-    #[doc = "The Timer Counter and the Prescale Counter are synchronously reset on the next positive edge of PCLK. The counters remain reset until TCR[1] is returned to zero."]
+    #[doc = "The Timer Counter and the Prescale Counter are synchronously reset on the next positive edge of PCLK. The counters remain reset until TCR\\[1\\] is returned to zero."]
     THE_TIMER_COUNTER_AN,
 }
 impl CRSTR {
@@ -196,7 +196,7 @@ impl<'a> _CENW<'a> {
 pub enum CRSTW {
     #[doc = "Do nothing."]
     DO_NOTHING_,
-    #[doc = "The Timer Counter and the Prescale Counter are synchronously reset on the next positive edge of PCLK. The counters remain reset until TCR[1] is returned to zero."]
+    #[doc = "The Timer Counter and the Prescale Counter are synchronously reset on the next positive edge of PCLK. The counters remain reset until TCR\\[1\\] is returned to zero."]
     THE_TIMER_COUNTER_AN,
 }
 impl CRSTW {
@@ -227,7 +227,7 @@ impl<'a> _CRSTW<'a> {
     pub fn do_nothing_(self) -> &'a mut W {
         self.variant(CRSTW::DO_NOTHING_)
     }
-    #[doc = "The Timer Counter and the Prescale Counter are synchronously reset on the next positive edge of PCLK. The counters remain reset until TCR[1] is returned to zero."]
+    #[doc = "The Timer Counter and the Prescale Counter are synchronously reset on the next positive edge of PCLK. The counters remain reset until TCR\\[1\\] is returned to zero."]
     #[inline]
     pub fn the_timer_counter_an(self) -> &'a mut W {
         self.variant(CRSTW::THE_TIMER_COUNTER_AN)

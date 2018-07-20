@@ -697,7 +697,7 @@ impl R {
             ((self.bits >> OFFSET) & MASK as u32) != 0
         })
     }
-    #[doc = "Bits 8:15 - Serial Clock Rate. The number of prescaler output clocks per bit on the bus, minus one. Given that CPSDVSR is the prescale divider, and the APB clock PCLK clocks the prescaler, the bit frequency is PCLK / (CPSDVSR X [SCR+1])."]
+    #[doc = "Bits 8:15 - Serial Clock Rate. The number of prescaler output clocks per bit on the bus, minus one. Given that CPSDVSR is the prescale divider, and the APB clock PCLK clocks the prescaler, the bit frequency is PCLK / (CPSDVSR X \\[SCR+1\\])."]
     #[inline]
     pub fn scr(&self) -> SCRR {
         let bits = {
@@ -740,7 +740,7 @@ impl W {
     pub fn cpha(&mut self) -> _CPHAW {
         _CPHAW { w: self }
     }
-    #[doc = "Bits 8:15 - Serial Clock Rate. The number of prescaler output clocks per bit on the bus, minus one. Given that CPSDVSR is the prescale divider, and the APB clock PCLK clocks the prescaler, the bit frequency is PCLK / (CPSDVSR X [SCR+1])."]
+    #[doc = "Bits 8:15 - Serial Clock Rate. The number of prescaler output clocks per bit on the bus, minus one. Given that CPSDVSR is the prescale divider, and the APB clock PCLK clocks the prescaler, the bit frequency is PCLK / (CPSDVSR X \\[SCR+1\\])."]
     #[inline]
     pub fn scr(&mut self) -> _SCRW {
         _SCRW { w: self }

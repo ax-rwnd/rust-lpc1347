@@ -77,7 +77,7 @@ impl W {
     pub fn roric(&mut self) -> _RORICW {
         _RORICW { w: self }
     }
-    #[doc = "Bit 1 - Writing a 1 to this bit clears the Rx FIFO was not empty and has not been read for a timeout period interrupt. The timeout period is the same for master and slave modes and is determined by the SSP bit rate: 32 bits at PCLK / (CPSDVSR X [SCR+1])."]
+    #[doc = "Bit 1 - Writing a 1 to this bit clears the Rx FIFO was not empty and has not been read for a timeout period interrupt. The timeout period is the same for master and slave modes and is determined by the SSP bit rate: 32 bits at PCLK / (CPSDVSR X \\[SCR+1\\])."]
     #[inline]
     pub fn rtic(&mut self) -> _RTICW {
         _RTICW { w: self }

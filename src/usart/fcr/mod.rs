@@ -18,7 +18,7 @@ impl super::FCR {
 pub enum FIFOENW {
     #[doc = "USART FIFOs are disabled. Must not be used in the application."]
     DISABLED,
-    #[doc = "Active high enable for both USART Rx and TX FIFOs and FCR[7:1] access. This bit must be set for proper USART operation. Any transition on this bit will automatically clear the USART FIFOs."]
+    #[doc = "Active high enable for both USART Rx and TX FIFOs and FCR\\[7:1\\] access. This bit must be set for proper USART operation. Any transition on this bit will automatically clear the USART FIFOs."]
     ENABLED,
 }
 impl FIFOENW {
@@ -49,7 +49,7 @@ impl<'a> _FIFOENW<'a> {
     pub fn disabled(self) -> &'a mut W {
         self.variant(FIFOENW::DISABLED)
     }
-    #[doc = "Active high enable for both USART Rx and TX FIFOs and FCR[7:1] access. This bit must be set for proper USART operation. Any transition on this bit will automatically clear the USART FIFOs."]
+    #[doc = "Active high enable for both USART Rx and TX FIFOs and FCR\\[7:1\\] access. This bit must be set for proper USART operation. Any transition on this bit will automatically clear the USART FIFOs."]
     #[inline]
     pub fn enabled(self) -> &'a mut W {
         self.variant(FIFOENW::ENABLED)
@@ -76,7 +76,7 @@ impl<'a> _FIFOENW<'a> {
 pub enum RXFIFORESW {
     #[doc = "No impact on either of USART FIFOs."]
     NO_IMPACT,
-    #[doc = "Writing a logic 1 to FCR[1] will clear all bytes in USART Rx FIFO, reset the pointer logic. This bit is self-clearing."]
+    #[doc = "Writing a logic 1 to FCR\\[1\\] will clear all bytes in USART Rx FIFO, reset the pointer logic. This bit is self-clearing."]
     CLEAR,
 }
 impl RXFIFORESW {
@@ -107,7 +107,7 @@ impl<'a> _RXFIFORESW<'a> {
     pub fn no_impact(self) -> &'a mut W {
         self.variant(RXFIFORESW::NO_IMPACT)
     }
-    #[doc = "Writing a logic 1 to FCR[1] will clear all bytes in USART Rx FIFO, reset the pointer logic. This bit is self-clearing."]
+    #[doc = "Writing a logic 1 to FCR\\[1\\] will clear all bytes in USART Rx FIFO, reset the pointer logic. This bit is self-clearing."]
     #[inline]
     pub fn clear(self) -> &'a mut W {
         self.variant(RXFIFORESW::CLEAR)
@@ -134,7 +134,7 @@ impl<'a> _RXFIFORESW<'a> {
 pub enum TXFIFORESW {
     #[doc = "No impact on either of USART FIFOs."]
     NO_IMPACT,
-    #[doc = "Writing a logic 1 to FCR[2] will clear all bytes in USART TX FIFO, reset the pointer logic. This bit is self-clearing."]
+    #[doc = "Writing a logic 1 to FCR\\[2\\] will clear all bytes in USART TX FIFO, reset the pointer logic. This bit is self-clearing."]
     CLEAR,
 }
 impl TXFIFORESW {
@@ -165,7 +165,7 @@ impl<'a> _TXFIFORESW<'a> {
     pub fn no_impact(self) -> &'a mut W {
         self.variant(TXFIFORESW::NO_IMPACT)
     }
-    #[doc = "Writing a logic 1 to FCR[2] will clear all bytes in USART TX FIFO, reset the pointer logic. This bit is self-clearing."]
+    #[doc = "Writing a logic 1 to FCR\\[2\\] will clear all bytes in USART TX FIFO, reset the pointer logic. This bit is self-clearing."]
     #[inline]
     pub fn clear(self) -> &'a mut W {
         self.variant(TXFIFORESW::CLEAR)

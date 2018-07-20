@@ -92,7 +92,7 @@ impl MM_ENAR {
 pub enum ENA_SCLR {
     #[doc = "When this bit is cleared to 0, the SCL output will be forced high when the module is in monitor mode. As described above, this will prevent the module from having any control over the I2C clock line."]
     HIGH,
-    #[doc = "When this bit is set, the I2C module may exercise the same control over the clock line that it would in normal operation. This means that, acting as a slave peripheral, the I2C module can stretch the clock line (hold it low) until it has had time to respond to an I2C interrupt.[1]"]
+    #[doc = "When this bit is set, the I2C module may exercise the same control over the clock line that it would in normal operation. This means that, acting as a slave peripheral, the I2C module can stretch the clock line (hold it low) until it has had time to respond to an I2C interrupt."]
     NORMAL,
 }
 impl ENA_SCLR {
@@ -243,7 +243,7 @@ impl<'a> _MM_ENAW<'a> {
 pub enum ENA_SCLW {
     #[doc = "When this bit is cleared to 0, the SCL output will be forced high when the module is in monitor mode. As described above, this will prevent the module from having any control over the I2C clock line."]
     HIGH,
-    #[doc = "When this bit is set, the I2C module may exercise the same control over the clock line that it would in normal operation. This means that, acting as a slave peripheral, the I2C module can stretch the clock line (hold it low) until it has had time to respond to an I2C interrupt.[1]"]
+    #[doc = "When this bit is set, the I2C module may exercise the same control over the clock line that it would in normal operation. This means that, acting as a slave peripheral, the I2C module can stretch the clock line (hold it low) until it has had time to respond to an I2C interrupt."]
     NORMAL,
 }
 impl ENA_SCLW {
@@ -274,7 +274,7 @@ impl<'a> _ENA_SCLW<'a> {
     pub fn high(self) -> &'a mut W {
         self.variant(ENA_SCLW::HIGH)
     }
-    #[doc = "When this bit is set, the I2C module may exercise the same control over the clock line that it would in normal operation. This means that, acting as a slave peripheral, the I2C module can stretch the clock line (hold it low) until it has had time to respond to an I2C interrupt.[1]"]
+    #[doc = "When this bit is set, the I2C module may exercise the same control over the clock line that it would in normal operation. This means that, acting as a slave peripheral, the I2C module can stretch the clock line (hold it low) until it has had time to respond to an I2C interrupt."]
     #[inline]
     pub fn normal(self) -> &'a mut W {
         self.variant(ENA_SCLW::NORMAL)

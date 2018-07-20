@@ -1324,7 +1324,7 @@ impl R {
             ((self.bits >> OFFSET) & MASK as u32) != 0
         })
     }
-    #[doc = "Bit 2 - Stop on MR0: the TC and PC will be stopped and TCR[0] will be set to 0 if MR0 matches the TC."]
+    #[doc = "Bit 2 - Stop on MR0: the TC and PC will be stopped and TCR\\[0\\] will be set to 0 if MR0 matches the TC."]
     #[inline]
     pub fn mr0s(&self) -> MR0SR {
         MR0SR::_from({
@@ -1351,7 +1351,7 @@ impl R {
             ((self.bits >> OFFSET) & MASK as u32) != 0
         })
     }
-    #[doc = "Bit 5 - Stop on MR1: the TC and PC will be stopped and TCR[0] will be set to 0 if MR1 matches the TC."]
+    #[doc = "Bit 5 - Stop on MR1: the TC and PC will be stopped and TCR\\[0\\] will be set to 0 if MR1 matches the TC."]
     #[inline]
     pub fn mr1s(&self) -> MR1SR {
         MR1SR::_from({
@@ -1378,7 +1378,7 @@ impl R {
             ((self.bits >> OFFSET) & MASK as u32) != 0
         })
     }
-    #[doc = "Bit 8 - Stop on MR2: the TC and PC will be stopped and TCR[0] will be set to 0 if MR2 matches the TC."]
+    #[doc = "Bit 8 - Stop on MR2: the TC and PC will be stopped and TCR\\[0\\] will be set to 0 if MR2 matches the TC."]
     #[inline]
     pub fn mr2s(&self) -> MR2SR {
         MR2SR::_from({
@@ -1405,7 +1405,7 @@ impl R {
             ((self.bits >> OFFSET) & MASK as u32) != 0
         })
     }
-    #[doc = "Bit 11 - Stop on MR3: the TC and PC will be stopped and TCR[0] will be set to 0 if MR3 matches the TC."]
+    #[doc = "Bit 11 - Stop on MR3: the TC and PC will be stopped and TCR\\[0\\] will be set to 0 if MR3 matches the TC."]
     #[inline]
     pub fn mr3s(&self) -> MR3SR {
         MR3SR::_from({
@@ -1437,7 +1437,7 @@ impl W {
     pub fn mr0r(&mut self) -> _MR0RW {
         _MR0RW { w: self }
     }
-    #[doc = "Bit 2 - Stop on MR0: the TC and PC will be stopped and TCR[0] will be set to 0 if MR0 matches the TC."]
+    #[doc = "Bit 2 - Stop on MR0: the TC and PC will be stopped and TCR\\[0\\] will be set to 0 if MR0 matches the TC."]
     #[inline]
     pub fn mr0s(&mut self) -> _MR0SW {
         _MR0SW { w: self }
@@ -1452,7 +1452,7 @@ impl W {
     pub fn mr1r(&mut self) -> _MR1RW {
         _MR1RW { w: self }
     }
-    #[doc = "Bit 5 - Stop on MR1: the TC and PC will be stopped and TCR[0] will be set to 0 if MR1 matches the TC."]
+    #[doc = "Bit 5 - Stop on MR1: the TC and PC will be stopped and TCR\\[0\\] will be set to 0 if MR1 matches the TC."]
     #[inline]
     pub fn mr1s(&mut self) -> _MR1SW {
         _MR1SW { w: self }
@@ -1467,7 +1467,7 @@ impl W {
     pub fn mr2r(&mut self) -> _MR2RW {
         _MR2RW { w: self }
     }
-    #[doc = "Bit 8 - Stop on MR2: the TC and PC will be stopped and TCR[0] will be set to 0 if MR2 matches the TC."]
+    #[doc = "Bit 8 - Stop on MR2: the TC and PC will be stopped and TCR\\[0\\] will be set to 0 if MR2 matches the TC."]
     #[inline]
     pub fn mr2s(&mut self) -> _MR2SW {
         _MR2SW { w: self }
@@ -1482,7 +1482,7 @@ impl W {
     pub fn mr3r(&mut self) -> _MR3RW {
         _MR3RW { w: self }
     }
-    #[doc = "Bit 11 - Stop on MR3: the TC and PC will be stopped and TCR[0] will be set to 0 if MR3 matches the TC."]
+    #[doc = "Bit 11 - Stop on MR3: the TC and PC will be stopped and TCR\\[0\\] will be set to 0 if MR3 matches the TC."]
     #[inline]
     pub fn mr3s(&mut self) -> _MR3SW {
         _MR3SW { w: self }
