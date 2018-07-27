@@ -30,6 +30,10 @@ Add `rust-lpc1347` as a dependency to your Cargo.toml file:
 
 ## Changelog
 
+### [0.2.2] - 2018-07-27
+- Search and replace [ and ] into escaped \[, \] in order to not break `cargo doc`. Tested with
+  `rustc 1.29.0-nightly (6a1c0637c 2018-07-23)`.
+
 ### [0.2.1] - 2018-07-17
 - Updates svd2rust to `0.13.1`. svd2rust uses the `--nightly` feature. Tested with
   `rustc 1.28.0-nightly (a805a2a5e 2018-06-10)` Which is working with cortex-m `0.5.x`.
